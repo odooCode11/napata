@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+
+         <!-- Sequences for states -->
+        <record id="seq_sale_state" model="ir.sequence">
+            <field name="name">Sales state</field>
+            <field name="code">state.request</field>
+            <field name="prefix">S</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <!-- Sequences for localities -->
+        <record id="seq_sale_localities" model="ir.sequence">
+            <field name="name">Sales localities</field>
+            <field name="code">localities.request</field>
+            <field name="prefix">L</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <!-- Sequences for Area -->
+        <record id="seq_sale_area" model="ir.sequence">
+            <field name="name">Sales area</field>
+            <field name="code">area.request</field>
+            <field name="prefix">A</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <!-- Sequences for Window -->
+        <record id="seq_sale_window" model="ir.sequence">
+            <field name="name">Sales window</field>
+            <field name="code">window.request</field>
+            <field name="prefix">W</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <!-- Sequences for Departments -->
+        <record id="seq_sale_department" model="ir.sequence">
+            <field name="name">Sales department</field>
+            <field name="code">department.request</field>
+            <field name="prefix">D</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+         <!-- Sequences for policies -->
+        <record id="seq_sale_policies" model="ir.sequence">
+            <field name="name">Sales policies</field>
+            <field name="code">policies.request</field>
+            <field name="prefix">P</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <!-- Sequences for conditions -->
+        <record id="seq_sale_conditions" model="ir.sequence">
+            <field name="name">Sales policies</field>
+            <field name="code">conditions.request</field>
+            <field name="prefix">C</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <!-- Sequences for Career -->
+        <record id="seq_sale_career" model="ir.sequence">
+            <field name="name">Sales career</field>
+            <field name="code">career.request</field>
+            <field name="prefix">C</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <!-- Sequences for Employees -->
+        <record id="seq_sale_employees" model="ir.sequence">
+            <field name="name">Sales employees</field>
+            <field name="code">employees.request</field>
+            <field name="prefix">EM</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <!-- Sequences for Applicant -->
+        <record id="seq_sale_applicant" model="ir.sequence">
+            <field name="name">Sales applicant</field>
+            <field name="code">applicant.request</field>
+            <field name="prefix">AP</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <!-- Sequences for orders -->
+        <record id="seq_sale_order" model="ir.sequence">
+            <field name="name">Sales Order</field>
+            <field name="code">order.request</field>
+            <field name="prefix">O</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <!-- Sequences for Visits -->
+        <record id="seq_sale_visits" model="ir.sequence">
+            <field name="name">Sales visits</field>
+            <field name="code">visit.request</field>
+            <field name="prefix">V</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <!-- Sequences for lands -->
+        <record id="seq_sale_land" model="ir.sequence">
+            <field name="name">Sales land</field>
+            <field name="code">lands.request</field>
+            <field name="prefix">L</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <!-- Sequences for Recommendation -->
+        <record id="seq_sale_recommendation" model="ir.sequence">
+            <field name="name">Sales recommendation</field>
+            <field name="code">recommendation.request</field>
+            <field name="prefix">RE</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <!-- Sequences for Permission -->
+        <record id="seq_sale_permission" model="ir.sequence">
+            <field name="name">Sales permission</field>
+            <field name="code">permission.request</field>
+            <field name="prefix">PE</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <!-- Sequences for Project_type -->
+        <record id="seq_sale_ProjectType" model="ir.sequence">
+            <field name="name">Sales projectType</field>
+            <field name="code">projectType.request</field>
+            <field name="prefix">PT</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <!-- Sequences for Projects -->
+        <record id="seq_sale_Projects" model="ir.sequence">
+            <field name="name">Sales projects</field>
+            <field name="code">projects.request</field>
+            <field name="prefix">PR</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <!-- Sequences for Reject Orders -->
+        <record id="seq_sale_reject" model="ir.sequence">
+            <field name="name">Sales rejected</field>
+            <field name="code">rejected.request</field>
+            <field name="prefix">Re</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+    </data>
+</odoo>

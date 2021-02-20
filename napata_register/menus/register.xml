@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+         <menuitem id="menu_napata_register_root" name="Registrar's office"
+                  parent="menu_na_napata_root"
+                  sequence="30" action="registrar_office_list_action"/>
+
+
+
+
+
+
+
+
+
+    </data>
+</odoo>

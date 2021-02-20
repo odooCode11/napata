@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!--Access Group Category-->
+        <record id="animal_production_management_access_cat" model="ir.module.category">
+            <field name="name">Animal Production Management</field>
+        </record>
+
+        <!--Group of Users-->
+        <record id="animal_user_access_group" model="res.groups">
+            <field name="name">User</field>
+            <field name="category_id" ref="animal_production_management_access_cat"/>
+        </record>
+
+        <!--Group of Managers-->
+        <record id="animal_manager_access_group" model="res.groups">
+            <field name="name">Manager</field>
+            <field name="category_id" ref="animal_production_management_access_cat"/>
+            <field name="implied_ids" eval="[(4, ref('animal_user_access_group'))]"/>
+        </record>
+
+        <!--Record Rule-->
+<!--        <record model="ir.rule" id="book_request_record_rule">-->
+<!--            <field name="name">Book Request Record Rule</field>-->
+<!--            <field name="model_id" ref="model_book_request"/>-->
+<!--            <field name="groups" eval="[(4, ref('library_user_access_group'))]"/>-->
+<!--            <field name="domain_force">[('company_id', '=', user.company_id.id)]</field>-->
+<!--        </record>-->
+
+    </data>
+</odoo>

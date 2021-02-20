@@ -1,0 +1,69 @@
+<odoo>
+    <data>
+        <template id="new_presentation_report_view">
+            <t t-call="web.html_container">
+                <header style="padding-buttom:40px;">
+                    <div style="float:left;border-bottom: 2px solid black; padding-bottom: 25px;border-color:#1f7b91 ! important;width:70%;">
+                        <b style="font-size:32px;color:#1f7b91 ! important;">Khartoum Specialized Hospital</b>
+                    </div>
+                    <div style="float:right; padding-bottom: 25px;">
+                        <img src="/clinic/static/img/shilal.png" style="width:160px;height:100px;"/>
+                    </div>
+                </header>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <h3 class="text-center">
+
+
+                    <!--                    <strong>Report on the bookings of Dr :</strong>-->
+                    <!--                    <span t-esc="doc_name"/>-->
+
+                </h3>
+                <t t-foreach="docs" t-as="o">
+                    <strong  style="text-align:riget;">date :
+                        <span t-field="o.year"/>
+                    </strong>
+
+                    <strong style="text-align:center;">Receipt of cash :
+                        <span t-field="o.prenent_code"/>
+                    </strong>
+                   <strong  style="text-align:left;">Receipt number:
+                    <span t-field="o.prenent_code"/>
+                    </strong>
+
+
+                    <div class="page">
+                        <font style="font-family: 'Amiri', serif;">
+
+                            <div class="container">
+                                <h2>Panel Heading</h2>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">student's name</div>
+                                    <div class="panel-heading">Amount and capacity</div>
+                                    <div class="panel-body">fees</div>
+                                </div>
+                            </div>
+                        </font>
+                    </div>
+                </t>
+                <div style="padding-top: 25px;">
+                    <b style="font-size:14px;width:50%;float:left;">
+                        Print By :
+                        <span t-esc="request.env.user.partner_id.name"/>
+                        <br></br>
+                        Signiture : _____________________________
+                    </b>
+                </div>
+                <div>
+                    <b style="font-size:14px;width:50%;float:right;">
+                        Print On :
+                        <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%A %d-%B-%Y %H:%M:%S')"/>
+                    </b>
+                </div>
+
+            </t>
+        </template>
+    </data>
+</odoo>

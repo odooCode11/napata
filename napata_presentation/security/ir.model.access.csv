@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+new_presentation_user,new_presentation user,model_napata_new_presentation,base.group_user,1,1,1,1
+

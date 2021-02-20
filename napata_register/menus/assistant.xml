@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+ <menuitem id="menu_na_napata_root" name="The Register"
+                  sequence="1"
+                  web_icon="openeducat_admission,static/description/icon.png"/>
+<!--        registration -->
+         <menuitem id="menu_napata_assistant_root" name="Registrar Assistant"
+                  parent="menu_na_napata_root"
+                  sequence="5"/>
+
+           <menuitem id="menu_napata_presentation_root" name="Presentation"
+                  parent="menu_napata_assistant_root"
+                action="registrar_assistant_list_action"/>
+
+<!--        addmation-->
+        <menuitem id="menu_napata_addmissions_root" name="Addmissions"
+                  parent="menu_napata_assistant_root"
+                  sequence="20" action="admissions_list_action"/>
+
+
+
+
+
+
+
+
+
+
+
+
+    </data>
+</odoo>

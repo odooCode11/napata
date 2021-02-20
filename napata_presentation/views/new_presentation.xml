@@ -1,0 +1,252 @@
+<odoo>
+
+    <record model="ir.ui.view" id="presentation_view_id">
+        <field name="name">napata.presentation.form</field>
+        <field name="model">napata.new_presentation</field>
+        <field name="arch" type="xml">
+
+
+            <form string="Student Information" create="false" >
+                <header>
+                    <button name="action_confirm" string="Confirm " states="draft" type="object"/>
+                    <button name="action_done" string="done " states="confirm" type="object"/>
+
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+
+                    <!--       header     -->
+                    <div class="row navbar navbar-expand-sm  navbar-dark" style="border-radius: 10px;
+    background-color: #187ebf;   color: white;">
+                        <div class="col-sm">
+                            <img src="napata_register/static/description/logo.jpeg" class="img-thumbnail"
+                                 style="height:80px;width:120px"/>
+                        </div>
+
+                        <div class="col-sm   text-center">
+                            <h1>
+                                <p>
+                                    <spane>كليــــــــــــــــة نبتـــــــــة</spane>
+                                    <br/>
+                                    <spane>NAPATA COLLEGE</spane>
+                                </p>
+                            </h1>
+                        </div>
+                        <div class="col-sm" style="  text-align:right">
+                            <h3>
+                                <p style="color: white; text-align: left;margin-left: 116px;">
+                                    <spane>Alreydh-Khartoum/Sudan</spane>
+                                    <br/>
+                                    <spane>Tel :+249112203333</spane>
+                                    <br/>
+                                    <spane>Email:info@napata.net</spane>
+                                    <br/>
+                                    <spane>www:napata.net</spane>
+                                </p>
+                            </h3>
+
+                        </div>
+                    </div>
+                    <div class="text-center" style="padding-bottom: 35px; padding-top: 40px;     color: black;">
+                        <h2>
+                            <span>نموزج التقديم للجامعات</span>
+                            <br/>
+                            <br/>
+                            <span>UNIVERSITIES ADMISSIONS</span>
+                        </h2>
+                    </div>
+
+
+                    <!--            header-->
+
+
+                    <group string="Student  Name">
+                        <table style="margin-left:160px;">
+                            <h1>
+                                <tr>
+                                    <td style="padding-right:10px;">
+                                        <field name="first_name" placeholder="First Name" readonly="1"/>
+                                    </td>
+
+                                    <td style="padding-right:10px;">
+                                        <field name="second_name" placeholder="Second Name" readonly="1"/>
+                                    </td>
+
+
+                                    <td style="padding-right:10px;">
+                                        <field name="third_name" placeholder="Third Name" readonly="1"/>
+                                    </td>
+
+                                    <td style="padding-right:10px;">
+                                        <field name="forth_name" placeholder="Forth Name" readonly="1"/>
+                                    </td>
+                                </tr>
+                            </h1>
+                        </table>
+
+                    </group>
+                    <group string="Form Namper:">
+                       <h3> <field name="form_number" readonly="1"/> </h3>
+                    </group>
+
+
+                    <notebook colspan="4">
+
+                        <page name="Personalinformation" string="Personal Information">
+                            <group col="4" colspan="4" name="name" string="Personal Information">
+                                <field name="nationality"/>
+                                <field name="idtype"/>
+                                <field name="id_number"/>
+                                <field name="gender"/>
+                                <field name="marital"/>
+                                <field name="religion"/>
+                            </group>
+
+
+                            <!--  -->
+                            <group col="6" colspan="4" name="date_and_place" string="Date And Place  Information">
+                                <field name="brath_day"/>
+                                <field name="states_id"/>
+                                <field name="Local_id"/>
+                                <field name="phone"/>
+                                <field name="watsapp"/>
+
+
+                            </group>
+
+                            <!--  -->
+                            <group col="4" colspan="4" name="Study_information" string="Study Information">
+<!--                                <field name="school"/>-->
+                                <field name="certificate_type" readonly="1"/>
+                                <field name="course"/>
+                                <field name="sit_number"/>
+                                <field name="ratio"/>
+                                <field name="exm_year"/>
+
+
+                            </group>
+
+                            <!--  -->
+                            <group string="Scholastic Desires">
+
+                                <group col="2">
+
+                                    <field name="main"/>
+
+                                </group>
+
+                            </group>
+
+                            <group>
+                                <field name="sub" widget="many2many_tags" options="{'color_feild': 'color'}"/>
+
+                            </group>
+
+
+                            <group string="Attachments" colspan="2" col="4">
+
+                                <field name="National_card"/>
+                                <field name="School_card"/>
+
+                            </group>
+                            <!--  abut-->
+                            <group string=" How did you hear about the college" col="6" colspan="2">
+                                <field name="facebook"/>
+                                <field name="website"/>
+                                <field name="newspaper"/>
+                                <field name="tv"/>
+                                <field name="radio"/>
+                                <field name="admission_book"/>
+
+
+                            </group>
+                            <!--                                -->
+
+                            <group string="  parent Information">
+
+                                <field name="provider" placeholder="Street..."/>
+                            </group>
+                            <group col="4">
+                                <field name="job" placeholder="ZIP"/>
+                                <field name="parent" placeholder="City"/>
+                                <field name="phone3" placeholder="City"/>
+                            </group>
+                            <!--  -->
+                            <group string="Financial information">
+
+                                <group col="4" colspan="2">
+                                    <field name="type_acceptance" readonly="1"/>
+                                    <field name="application_fees" readonly="1"/>
+                                    <field name="receipt_code" readonly="1"/>
+                                    <field name="pay_date" readonly="1"/>
+
+
+                                </group>
+                            </group>
+                            <field name="submet"/>
+                            <group>
+                                <field name="signup_valid"/>
+
+
+                            </group>
+
+
+                        </page>
+                    </notebook>
+
+
+                </sheet>
+
+            </form>
+        </field>
+    </record>
+
+
+    <!-- end  tree viwe for pationt -->
+
+
+    <!-- start form viwe from pation Info -->
+
+    <!-- start form viwe from pation Info -->
+    <record model="ir.ui.view" id="presentation_new_tree_view">
+        <field name="name">presentation.tree</field>
+        <field name="model">napata.new_presentation</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <!--                <field name="preType2"/>-->
+                <!--                <field name="prenent_code"/>-->
+                <!--                <field name="fees"/>-->
+
+
+            </tree>
+        </field>
+    </record>
+    <!-- end of form viwe from pation Info -->
+    <!--    search viwe -->
+    <record model="ir.ui.view" id="new_presentation_search_view">
+        <field name="name">presentation.search</field>
+        <field name="model">napata.new_presentation</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <!--                <field name="prenent_code"/>-->
+            </search>
+        </field>
+    </record>
+    <!-- end of form viwe from pation Info -->
+    <record model="ir.actions.act_window" id="new_presentation_list_action">
+        <field name="name">Presntaion</field>
+        <field name="res_model">napata.new_presentation</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'delete': False,'create': False}</field>
+
+        <field name="help" type="html">
+
+            <p class="o_view_nocontent_smiling_face">Create the first presentation
+            </p>
+        </field>
+    </record>
+
+
+</odoo>

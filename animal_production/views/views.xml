@@ -1,0 +1,1523 @@
+<odoo>
+    <data>
+        <!--Localities Action-->
+        <record id="get_localities_action" model="ir.actions.act_window">
+            <field name="name">Localities</field>
+            <field name="res_model">localities</field>
+            <field name="view_mode">tree</field>
+            <field name="domain">[('state_id', '=', active_id)]</field>
+        </record>
+
+        <!-- states form view -->
+        <record id="states_form_view" model="ir.ui.view">
+            <field name="name">states.form.view</field>
+            <field name="model">states</field>
+            <field name="arch" type="xml">
+                <form string="States">
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="seq1" readonly="1"/>
+                            </h1>
+                        </div>
+                        <div class="oe_button_box" name="button_box">
+                            <button name="%(get_localities_action)d"
+                                    type="action"
+                                    class="oe_stat_button"
+                                    icon="fa-list">
+                                <field name="locality_count" widget="statinfo"/>
+                            </button>
+                        </div>
+                        <group>
+                            <field name="name" required="True"/>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <!-- states  tree view -->
+        <record id="states_tree_view" model="ir.ui.view">
+            <field name="name">states.tree.view</field>
+            <field name="model">states</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        <!-- Search view of states -->
+        <record id="view_states_search" model="ir.ui.view">
+            <field name="name">view.states.search</field>
+            <field name="model">states</field>
+            <field name="arch" type="xml">
+                <search string="States">
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+        <record id="states_action" model="ir.actions.act_window">
+            <field name="name">states</field>
+            <field name="res_model">states</field>
+            <field name="view_mode">tree,form</field>
+
+        </record>
+        <!-- Localities form view -->
+        <record id="Localities_form_view" model="ir.ui.view">
+            <field name="name">Localities.form.view</field>
+            <field name="model">localities</field>
+            <field name="arch" type="xml">
+                <form string="localities">
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="seq2" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="state_id" required="True"/>
+                                <field name="name" required="True"/>
+                            </group>
+
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <!-- Localities  tree view -->
+        <record id="Localities_tree_view" model="ir.ui.view">
+            <field name="name">Localities.tree.view</field>
+            <field name="model">localities</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        <!-- Search view of Localities -->
+        <record id="view_Localities_search" model="ir.ui.view">
+            <field name="name">view.Localities.search</field>
+            <field name="model">localities</field>
+            <field name="arch" type="xml">
+                <search string="Localities">
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+        <!-- Localities Action -->
+
+        <record id="Localities_action" model="ir.actions.act_window">
+            <field name="name">localities</field>
+            <field name="res_model">localities</field>
+            <field name="view_mode">tree,form</field>
+
+        </record>
+        <!-- Areas form view -->
+        <record id="Areas_form_view" model="ir.ui.view">
+            <field name="name">Areas.form.view</field>
+            <field name="model">areas</field>
+            <field name="arch" type="xml">
+                <form string="Areas">
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="seq3" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group>
+
+                            <field name="name" required="True"/>
+                            <field name="locality_id" required="True"/>
+                            <field name="state_id" required="True"/>
+
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <!-- Areas  tree view -->
+        <record id="Areas_tree_view" model="ir.ui.view">
+            <field name="name">Areas.tree.view</field>
+            <field name="model">areas</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="state_id" required="True"/>
+                    <field name="locality_id" required="True"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        <!-- Search view of areas -->
+        <record id="view_areas_search" model="ir.ui.view">
+            <field name="name">view.areas.search</field>
+            <field name="model">areas</field>
+            <field name="arch" type="xml">
+                <search string="Areas">
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+        <!-- Area actions -->
+        <record id="areas_action" model="ir.actions.act_window">
+            <field name="name">areas</field>
+            <field name="res_model">areas</field>
+            <field name="view_mode">tree,form</field>
+
+        </record>
+        <!-- Window form view -->
+        <record id="window_form_view" model="ir.ui.view">
+            <field name="name">window.form.view</field>
+            <field name="model">window</field>
+            <field name="arch" type="xml">
+                <form string="Windows">
+
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="seq4" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <field name="name" required="True"/>
+                            <field name="area_id" required="True"/>
+                            <field name="locality_id" required="True"/>
+                            <field name="state_id" required="True"/>
+
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <!-- window tree view -->
+        <record id="window_tree_view" model="ir.ui.view">
+            <field name="name">window.tree.view</field>
+            <field name="model">window</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        <!-- Search view of window -->
+        <record id="view_window_search" model="ir.ui.view">
+            <field name="name">view.window.search</field>
+            <field name="model">window</field>
+            <field name="arch" type="xml">
+                <search string="Window">
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+        <!--Window action -->
+
+        <record id="window_action" model="ir.actions.act_window">
+            <field name="name">window</field>
+            <field name="res_model">window</field>
+            <field name="view_mode">tree,form</field>
+
+        </record>
+        <!-- Departments form view -->
+        <record id="department_form_view" model="ir.ui.view">
+            <field name="name">department.form.view</field>
+            <field name="model">departments</field>
+            <field name="arch" type="xml">
+                <form string="Departments">
+                    <header>
+                        <button name="action_confirm" type="object" class="oe_highlight" string="confirm"
+                                states="draft"/>
+                        <button name="action_draft" type="object" class="oe_highlight" string="Rest To Draft"
+                                attrs="{'invisible': [('state', '=', 'draft')]}"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,confirm"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="seq5" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group string="Department Information">
+                            <group>
+                                <field name="name" required="True"/>
+                                <field name="type" required="True" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="area_id" required="True" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            </group>
+                            <group>
+                                <field name="locality_id" required="True"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="state_id" required="True"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Policies">
+                                <group>
+                                    <field name="policy_ids" nolabel="1">
+                                        <tree editable="True">
+                                            <field name="policy_type"/>
+                                            <field name="Policy_Description"/>
+                                            <field name="f_date"/>
+                                            <field name="l_date"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page string="Condition">
+                                <group>
+                                    <field name="condition_ids" nolabel="1">
+                                        <tree editable="True">
+                                            <field name="Condition_Type"/>
+                                            <field name="Condition_Description"/>
+                                            <field name="f_date"/>
+                                            <field name="l_date"/>
+                                            <field name="l_date"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                        </notebook>
+
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <!-- Departments tree view -->
+        <record id="department_tree_view" model="ir.ui.view">
+            <field name="name">department.tree.view</field>
+            <field name="model">departments</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="area_id"/>
+                    <field name="locality_id"/>
+                    <field name="state_id"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+        <!-- Search view of Departments -->
+        <record id="view_departments_search" model="ir.ui.view">
+            <field name="name">view.departments.search</field>
+            <field name="model">departments</field>
+            <field name="arch" type="xml">
+                <search string="Departments">
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+        <!-- Actions of  Departments  -->
+
+        <record id="departments_action" model="ir.actions.act_window">
+            <field name="name">department</field>
+            <field name="res_model">departments</field>
+            <field name="view_mode">tree,form</field>
+
+        </record>
+
+        <!-- Policies form view -->
+
+        <record id="policies_form_view" model="ir.ui.view">
+            <field name="name">policies.form.view</field>
+            <field name="model">policies</field>
+            <field name="arch" type="xml">
+                <form string="Policies">
+                    <header>
+                        <button name="action_confirm" type="object" class="oe_highlight" string="confirm"
+                                states="draft"/>
+                        <button name="action_draft" type="object" class="oe_highlight" string="Rest To Draft"
+                                attrs="{'invisible': [('state', '=', 'draft')]}"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,confirm"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="seq6" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group string="Policies Information">
+                            <group>
+                                <field name="policy_type" required="True"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="Policy_Description" required="True"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            </group>
+                            <group>
+                                <field name="f_date" required="True" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="l_date" required="True" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="department_id" required="True"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+
+                            </group>
+
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <!-- Policies tree view -->
+        <record id="Policies_tree_view" model="ir.ui.view">
+            <field name="name">policies.tree.view</field>
+            <field name="model">policies</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="policy_type" required="True"/>
+                    <field name="Policy_Description" required="True"/>
+                    <field name="f_date" required="True"/>
+                    <field name="l_date" required="True"/>
+                </tree>
+            </field>
+        </record>
+        <!-- Policies Action -->
+
+        <record id="policies_action" model="ir.actions.act_window">
+            <field name="name">policies</field>
+            <field name="res_model">policies</field>
+            <field name="view_mode">tree,form</field>
+
+        </record>
+        <!-- Conditions form view -->
+
+        <record id="Conditions_form_view" model="ir.ui.view">
+            <field name="name">Conditions.form.view</field>
+            <field name="model">conditions</field>
+            <field name="arch" type="xml">
+                <form string="conditions">
+                    <header>
+                        <button name="action_confirm" type="object" class="oe_highlight" string="confirm"
+                                states="draft"/>
+                        <button name="action_draft" type="object" class="oe_highlight" string="Rest To Draft"
+                                attrs="{'invisible': [('state', '=', 'draft')]}"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,confirm"/>
+                    </header>
+
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="seq7" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group string="conditions Information">
+                            <group>
+                                <field name="Condition_Type" required="True"/>
+                                <field name="f_date" required="True"/>
+                            </group>
+                            <group>
+                                <field name="l_date" required="True"/>
+                                <field name="department_id" required="True"/>
+
+                            </group>
+
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <!-- Policies tree view -->
+        <record id="Condition_tree_view" model="ir.ui.view">
+            <field name="name">Condition.tree.view</field>
+            <field name="model">conditions</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="Condition_Type" required="True"/>
+                    <field name="f_date" required="True"/>
+                    <field name="l_date" required="True"/>
+                    <field name="department_id" required="True"/>
+                </tree>
+            </field>
+        </record>
+        <!-- Condition Action -->
+
+        <record id="Condition_action" model="ir.actions.act_window">
+            <field name="name">Condition</field>
+            <field name="res_model">conditions</field>
+            <field name="view_mode">tree,form</field>
+
+        </record>
+        <!-- Applicant form view -->
+        <record id="Applicant_form_view" model="ir.ui.view">
+            <field name="name">Applicant.form.view</field>
+            <field name="model">applicant</field>
+            <field name="arch" type="xml">
+                <form string="Applicant">
+                    <header>
+
+                        <button name="action_confirm" type="object" class="oe_highlight" string="تأكيد"
+                                states="draft"/>
+                        <button name="action_draft" type="object" class="oe_highlight" string="التعين كمبدئي"
+                                attrs="{'invisible': [('state', '=', 'draft')]}"/>
+                        <button name="action_order" type="object" class="oe_highlight" string="أضافه طلب"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,confirm"/>
+                    </header>
+                    <sheet>
+                        <div style="width:100%;">
+                            <div style="width:10%;float;left;height:80px">
+                                <field name="image" class="float-left" widget="image"/>
+                            </div>
+                        </div>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="seq10" readonly="1"/>
+                            </h1>
+                        </div>
+                        <notebook>
+                            <page string="معلومات مطلوبة">
+                                <group colspan="4">
+                                    <group>
+                                        <field name="name" required="True"
+                                               attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                        <field name="_gender" widget="radio" options="{'horizontal': true}"
+                                               required="True"
+                                               attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                        <field name="_Birth_date" required="True"
+                                               attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                    </group>
+                                </group>
+                                <group colspan="4">
+                                    <group>
+                                        <field name="_Personal_prove_type" required="True"
+                                               attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                        <field name="_personal_prove_number" required="True"
+                                               attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="معلومات اخري">
+                                <group colspan="4">
+                                    <group>
+                                        <field name="_email" widget="email" required="True"
+                                               attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                        <field name="_address" required="True"
+                                               attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                        <field name="_Phone_number" required="True"
+                                               attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                    </group>
+                                </group>
+                            </page>
+
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <!-- Applicant tree view -->
+        <record id="Applicant_tree_view" model="ir.ui.view">
+            <field name="name">Applicant.tree.view</field>
+            <field name="model">applicant</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name" required="True"/>
+                    <field name="_Phone_number" required="True"/>
+                    <field name="_gender" required="True"/>
+                    <field name="_address" required="True"/>
+                    <field name="_Personal_prove_type" required="True"/>
+                    <field name="_personal_prove_number" required="True"/>
+                </tree>
+            </field>
+        </record>
+        <!-- Search view of Applicant -->
+        <record id="view_applicant_search" model="ir.ui.view">
+            <field name="name">view.applicant.search</field>
+            <field name="model">applicant</field>
+            <field name="arch" type="xml">
+                <search string="Applicant">
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+        <!--Applicant Action -->
+
+        <record id="Applicant_action" model="ir.actions.act_window">
+            <field name="name">Applicants</field>
+            <field name="res_model">applicant</field>
+            <field name="view_mode">tree,form</field>
+
+        </record>
+        <!-- Career form view -->
+        <record id="Careers_form_view" model="ir.ui.view">
+            <field name="name">Career.form.view</field>
+            <field name="model">career</field>
+            <field name="arch" type="xml">
+                <form string="Career">
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="seq8" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <field name="name" required="True"/>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <!-- Career  tree view -->
+        <record id="Career_tree_view" model="ir.ui.view">
+            <field name="name">Career.tree.view</field>
+            <field name="model">career</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        <!-- Search view of Career -->
+        <record id="view_Career_search" model="ir.ui.view">
+            <field name="name">view.Career.search</field>
+            <field name="model">career</field>
+            <field name="arch" type="xml">
+                <search string="Career">
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+        <!-- Career Actions -->
+        <record id="career_action" model="ir.actions.act_window">
+            <field name="name">career</field>
+            <field name="res_model">career</field>
+            <field name="view_mode">tree,form</field>
+
+        </record>
+        <!-- Employees form view -->
+
+        <record id="Employees_form_view" model="ir.ui.view">
+            <field name="name">Employees.form.view</field>
+            <field name="model">employees</field>
+            <field name="arch" type="xml">
+                <form string="Employees">
+                    <header>
+                        <button name="action_confirm" type="object" class="oe_highlight" string="تأكيد"
+                                states="draft"/>
+                        <button name="action_draft" type="object" class="oe_highlight" string="تعيين كمبدئي"
+                                attrs="{'invisible': [('state', '=', 'draft')]}"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,confirm"/>
+                    </header>
+                    <sheet>
+                        <div style="width:100%;">
+                            <div style="width:10%;float;left;height:80px">
+                                <field name="image" widget="image"/>
+                            </div>
+                        </div>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="seq9" readonly="1"/>
+                            </h1>
+                        </div>
+                        <div style="width:100%;">
+                            <group string="معلومات الموظف">
+                                <notebook>
+                                    <page string="المعلومات الشخصية">
+                                        <tree>
+                                            <group colspan="4">
+                                                <group>
+                                                    <field name="name" required="True"
+                                                           attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                                    <field name="_gender" widget="radio" options="{'horizontal': true}"
+                                                           required="True"
+                                                           attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                                    <field name="_Birth_date" required="True"
+                                                           attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                                </group>
+                                            </group>
+                                            <group colspan="4">
+                                                <group>
+                                                    <field name="_address" required="True"
+                                                           attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                                    <field name="_Phone_number" required="True"
+                                                           attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                                </group>
+                                            </group>
+                                        </tree>
+                                    </page>
+                                    <page string="معلومات الوظيفة">
+                                        <tree>
+                                            <group colspan="4">
+                                                <group>
+
+                                                    <field name="career_id" required="True"
+                                                           attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                                    <field name="user_id" required="True"
+                                                           attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                                </group>
+                                            </group>
+                                            <group colspan="4">
+                                                <group>
+                                                    <field name="department_id" required="True"
+                                                           attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                                    <field name="window_id" required="True"
+                                                           attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                                    <field name="_hire_date" required="True"
+                                                           attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                                </group>
+                                            </group>
+                                        </tree>
+                                    </page>
+                                    <page string="المعلومات الخاصة">
+                                        <tree>
+                                            <group colspan="4">
+                                                <group>
+                                                    <field name="_social_state" required="True"
+                                                           attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                                </group>
+                                            </group>
+                                            <group colspan="4">
+                                                <group>
+                                                    <field name="_Personal_prove_type" required="True"
+                                                           attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                                    <field name="_personal_prove_number" required="True"
+                                                           attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                                    <field name="_email" widget="email" required="True"
+                                                           attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                                </group>
+                                            </group>
+                                        </tree>
+                                    </page>
+                                </notebook>
+                            </group>
+                        </div>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <!-- Employees tree view -->
+        <record id="Employees_tree_view" model="ir.ui.view">
+            <field name="name">Employees.tree.view</field>
+            <field name="model">employees</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name" required="True"/>
+                    <field name="_Phone_number" required="True"/>
+                    <field name="_gender" required="True"/>
+                    <field name="_address" required="True"/>
+                    <field name="_Personal_prove_type" required="True"/>
+                    <field name="_personal_prove_number" required="True"/>
+                    <field name="department_id" required="True"/>
+                    <field name="window_id" required="True"/>
+                    <field name="career_id" required="True"/>
+                </tree>
+            </field>
+        </record>
+        <!-- Search view of Employees -->
+        <record id="view_employees_search" model="ir.ui.view">
+            <field name="name">view.employees.search</field>
+            <field name="model">employees</field>
+            <field name="arch" type="xml">
+                <search string="Employees">
+                    <field name="name"/>
+
+
+                <filter name='by_gender_male' string="Male" domain="[('_gender','=','male')]"/>
+                <filter name='by_gender_Female' string="Female" domain="[('_gender','=','female')]"/>
+                <filter name="by_gender_m_f" string="Gender" domain="[]" context="{'group_by':'_gender'}"/>
+                <filter name="by_department" string="Departments" domain="[]" context="{'group_by':'department_id'}"/>
+                <filter name="by_career" string="Career" domain="[]" context="{'group_by':'career_id'}"/>
+                </search>
+            </field>
+        </record>
+        <!--Employees Action -->
+
+        <record id="Employees_action" model="ir.actions.act_window">
+            <field name="name">Employees</field>
+            <field name="res_model">employees</field>
+            <field name="view_mode">tree,form</field>
+
+        </record>
+        <!-- Orders form view -->
+
+        <record id="Orders_form_view" model="ir.ui.view">
+            <field name="name">Order.form.view</field>
+            <field name="model">orders</field>
+            <field name="arch" type="xml">
+                <form string="Order">
+                    <header>
+                        <button name="action_visit" type="object" class="oe_highlight" string="اضافه زياره"
+                                attrs="{'invisible': [('visit_id', '!=', False)]}"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,confirm,reject"/>
+                    </header>
+                    <sheet>
+
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" readonly="1"/>
+                            </h1>
+                        </div>
+
+                        <group string="معلومات الطلبات">
+                            <group>
+                                <field name="Applicant_id" required="True"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+
+                                <field name="order_type" required="True"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="Order_date" required="True"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="state_id"/>
+                                <field name="locality_id"/>
+                                <field name="area_id"/>
+
+                            </group>
+                            <group>
+                                <field name="visit_id" invisible="1"/>
+                                <field name="department_id" required="True"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="window_id" required="True"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+
+                            </group>
+
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <!-- Orders tree view -->
+        <record id="Orders_tree_view" model="ir.ui.view">
+            <field name="name">Orders.tree.view</field>
+            <field name="model">orders</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name" required="True"/>
+                    <field name="order_type" required="True"/>
+                    <field name="Order_date" required="True"/>
+                    <field name="Applicant_id" required="True"/>
+                    <field name="department_id" required="True"/>
+                    <field name="window_id" required="True"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+        <!-- Search view of Orders -->
+        <record id="view_order_search" model="ir.ui.view">
+            <field name="name">view.order.search</field>
+            <field name="model">orders</field>
+            <field name="arch" type="xml">
+                <search string="Orders">
+                    <field name="order_type"/>
+
+                <filter name='by_order_type_i' string="Initial order" domain="[('order_type','=','I')]"/>
+                <filter name='by_order_type_p' string=" Permission order" domain="[('order_type','=','p')]"/>
+                <filter name='by_order_type_o' string="re Permission order" domain="[('order_type','=','O')]"/>
+                <filter name="by_state" string="State" domain="[]" context="{'group_by':'state'}"/>
+                <filter name="by_department" string="Departments" domain="[]" context="{'group_by':'department_id'}"/>
+                <filter name="by_applicant" string="applicant name" domain="[]" context="{'group_by':'Applicant_id'}"/>
+</search>
+            </field>
+        </record>
+
+        <!-- Graph View of order -->
+        <record id="view_order_graph" model="ir.ui.view">
+            <field name="name">view.order.graph</field>
+            <field name="model">orders</field>
+            <field name="arch" type="xml">
+                <graph string="order" type="pie">
+                    <field name="order_type" type="row"/>
+                    <field name="locality_id" type="column"/>
+                    <!--						<field name="visit_type" type="measure"/>-->
+                </graph>
+            </field>
+        </record>
+        <!-- Orders Action -->
+
+        <record id="Orders_action" model="ir.actions.act_window">
+            <field name="name">orders</field>
+            <field name="res_model">orders</field>
+            <field name="view_mode">tree,form,graph</field>
+
+        </record>
+
+        <!-- lands form view -->
+
+        <record id="lands_form_view" model="ir.ui.view">
+            <field name="name">lands.form.view</field>
+            <field name="model">lands</field>
+            <field name="arch" type="xml">
+                <form string="Lands">
+                    <header>
+                        <button name="action_register" type="object" class="oe_highlight" string="تسجيل"
+                                states="draft"/>
+                        <button name="action_confirm" type="object" class="oe_highlight" string="تأكيد"
+                                states="register"/>
+                        <button name="action_cancel" type="object" class="btn btn-danger" string="إلغاء"
+                                attrs="{'invisible': [('state', 'in', ('confirm', 'cancel'))]}"/>
+                        <button name="action_draft" type="object" class="oe_highlight" string="التعين كمبدئي"
+                                attrs="{'invisible': [('state', '=', 'draft')]}"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,register,confirm,cancel"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group string="معلومات الاراضي">
+                            <group>
+                                <field name="ownership_type" required="True"/>
+                                <field name="search_certificate_id" required="True" placeholder="E.X ABC1232020dep"/>
+                                <field name="search_certificate_date" required="True"/>
+                                <field name="land_type" attrs="{'invisible': [('state', '=', 'draft')]}"
+                                       options="{'horizontal': true}"/>
+                                <field name="lands_space" attrs="{'invisible': [('state', '=', 'draft')]}"/>
+
+                            </group>
+                            <group>
+                                <field name="e_direction" attrs="{'invisible': [('state', '=', 'draft')]}"/>
+                                <field name="e_direction" attrs="{'invisible': [('state', '=', 'draft')]}"/>
+                                <field name="distance" attrs="{'invisible': [('state', '=', 'draft')]}"/>
+
+                            </group>
+
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <!-- Lands tree view -->
+        <record id="Lands_tree_view" model="ir.ui.view">
+            <field name="name">Lands.tree.view</field>
+            <field name="model">lands</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="ownership_type" required="True"/>
+                    <field name="search_certificate_id" required="True" placeholder="09123..."/>
+                    <field name="land_type" required="True" widget="radio"
+                           options="{'horizontal': true}"/>
+                    <field name="lands_space" required="True"/>
+                    <field name="e_direction" required="True"/>
+                </tree>
+            </field>
+        </record>
+        <!-- Search view of land -->
+        <record id="view_land_search" model="ir.ui.view">
+            <field name="name">view.land.search</field>
+            <field name="model">lands</field>
+            <field name="arch" type="xml">
+                <search string="lands">
+                    <field name="search_certificate_id"/>
+                    <field name="ownership_type"/>
+                    <field name="search_certificate_date"/>
+                    <filter name="by_state" string="State" domain="[]" context="{'group_by':'state'}"/>
+                </search>
+            </field>
+        </record>
+        <!-- Lands Action -->
+
+        <record id="Lands_action" model="ir.actions.act_window">
+            <field name="name">Lands</field>
+            <field name="res_model">lands</field>
+            <field name="view_mode">tree,form</field>
+
+        </record>
+
+        <!-- Recommendation form view -->
+        <record id="Recommendation_form_view" model="ir.ui.view">
+            <field name="name">Recommendation.form.view</field>
+            <field name="model">recommendation</field>
+            <field name="arch" type="xml">
+                <form string="Recommendation">
+                    <header>
+                        <button name="action_confirm" type="object" class="oe_highlight" string="تأكيد"
+                                states="draft"/>
+                        <button name="action_reject" type="object" class="btn btn-danger" string="رفض"
+                                states="draft"/>
+                        <button name="action_draft" type="object" class="oe_highlight" string="تعين كمبدئي"
+                                attrs="{'invisible': [('state', '=', 'draft')]}"/>
+                        <button name="action_permission" type="object" class="oe_highlight" string="اضافه تصديق"
+                                attrs="{'invisible': ['|', ('state', 'in', ('draft', 'reject')), ('recommend_type', '=', 'initial_recommendation')]}"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,confirm,reject"/>
+                    </header>
+
+                    <sheet>س
+                        <div class="oe_title">
+                            <h1>
+                                <field name="seq12" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group col="2">
+                            <group string="معلوملت الزيارة">
+                                <field name="visit_id" required="True"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="per_id" invisible="1"/>
+                                <field name="order_type" required="True" readonly="1"/>
+                                <field name="employee_id" readonly="1"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="land_id" readonly="1" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            </group>
+                            <group string="معلومات التوصية">
+                                <field name="recommend_type" required="True"
+                                       options="{'horizontal': true}" readonly="1"/>
+                                <field name="recommend_date" required="True"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="emp_id" readonly="True" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            </group>
+
+                        </group>
+                        <group>
+                            <field name="recommendation_text" required="True"
+                                   attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <!-- Recommendation tree view -->
+        <record id="Recommendation_tree_view" model="ir.ui.view">
+            <field name="name">Recommendation.tree.view</field>
+            <field name="model">recommendation</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="recommend_type" required="True"/>
+                    <field name="recommend_date" required="True"/>
+                    <field name="recommendation_text" required="True"/>
+                    <field name="land_id" required="True"/>
+                    <field name="order_type" required="True"/>
+                    <field name="employee_id" required="True"/>
+                    <field name="state" required="True"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Search view of Recommendations -->
+        <record id="view_recommendations_search" model="ir.ui.view">
+            <field name="name">view.recommendations.search</field>
+            <field name="model">recommendation</field>
+            <field name="arch" type="xml">
+                <search string="Recommendations">
+
+                    <field name="recommend_type"/>
+                    <field name="recommend_date"/>
+
+                    <filter name='by_recommendation_type' string="Initial Recommendations"
+                            domain="[('recommend_type','=','initial recommendation')]"/>
+
+                    <filter name="by_state" string="State" domain="[]" context="{'group_by':'state'}"/>
+                </search>
+
+            </field>
+        </record>
+
+        <!-- Recommendation Action -->
+        <record id="Recommendation_action" model="ir.actions.act_window">
+            <field name="name">Recommendation</field>
+            <field name="res_model">recommendation</field>
+            <field name="view_mode">tree,form</field>
+
+        </record>
+        <!-- Permission form view -->
+        <record id="Permission_form_view" model="ir.ui.view">
+            <field name="name">Permission.form.view</field>
+            <field name="model">permission</field>
+            <field name="arch" type="xml">
+                <form string="Permission">
+                    <header>
+                        <button name="action_confirm" type="object" class="oe_highlight" string="تأكيد"
+                                states="draft"/>
+                        <button name="action_draft" type="object" class="oe_highlight" string="تعين كمبدئي"
+                                attrs="{'invisible': [('state', '=', 'draft')]}"/>
+                        <button name="action_project" type="object" class="oe_highlight" string="اضافة مشروع"
+                                attrs="{'invisible': ['|', ('state', '=', 'draft'), ('pro_id', '!=', False)]}"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,confirm"/>
+                    </header>
+
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="seq13" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group string="معلومات التصديق">
+                            <group>
+                                <field name="recommend_id" required="True"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="pro_id" invisible="1"/>
+                                <field name="order_type" required="True"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="recommend_date" required="True"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            </group>
+                            <group>
+                                <field name="permission_Type" required="True"
+                                       options="{'horizontal': true}" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="Start_date" required="True"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="end_date" required="True"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="employee_id" required="True"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="fess" required="True" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            </group>
+
+
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <!-- Permission tree view -->
+        <record id="Permission_tree_view" model="ir.ui.view">
+            <field name="name">Permission.tree.view</field>
+            <field name="model">permission</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="permission_Type" required="True"/>
+                    <field name="Start_date" required="True"/>
+                    <field name="end_date" required="True"/>
+                    <field name="employee_id" required="True"/>
+                    <field name="fess" required="True"/>
+                    <field name="order_type" required="True"/>
+                    <field name="recommend_id" required="True"/>
+                    <field name="recommend_date" required="True"/>
+
+                </tree>
+            </field>
+        </record>
+        <!-- Search view of Permission -->
+        <record id="view_permission_search" model="ir.ui.view">
+            <field name="name">view.permission.search</field>
+            <field name="model">permission</field>
+            <field name="arch" type="xml">
+                <search string="Permission">
+                    <field name="permission_Type"/>
+                    <filter name="by_state" string="State" domain="[]" context="{'group_by':'state'}"/>
+                </search>
+            </field>
+        </record>
+
+        <!-- Graph View of permission -->
+        <record id="view_permission_graph" model="ir.ui.view">
+            <field name="name">view.permission.graph</field>
+            <field name="model">permission</field>
+            <field name="arch" type="xml">
+                <graph string="permission" type="pie">
+                    <field name="permission_Type" type="row"/>
+                    <field name="locality_id" type="column"/>
+                    <!--						<field name="visit_type" type="measure"/>-->
+                </graph>
+            </field>
+        </record>
+        <!-- Permission Action -->
+
+        <record id="Permission_action" model="ir.actions.act_window">
+            <field name="name">Permission</field>
+            <field name="res_model">permission</field>
+            <field name="view_mode">tree,form,graph</field>
+
+        </record>
+        <!-- Project_Type form view -->
+        <record id="Project_Type_form_view" model="ir.ui.view">
+            <field name="name">Project_Type.form.view</field>
+            <field name="model">project_type</field>
+            <field name="arch" type="xml">
+                <form string="Project_Type">
+                    <header>
+                        <button name="action_confirm" type="object" class="oe_highlight" string="تأكيد"
+                                states="draft"/>
+                        <button name="action_draft" type="object" class="oe_highlight" string="النعين كمبدئي"
+                                attrs="{'invisible': [('state', '=', 'draft')]}"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,confirm"/>
+                    </header>
+
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="seq14" readonly="1"/>
+                            </h1>
+                        </div>
+
+
+                        <group string='معلومات انواع المشاريع'>
+                            <field name="project_type" required="True"
+                                   options="{'horizontal': true}" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <!-- Project_Type tree view -->
+        <record id="Project_Type_tree_view" model="ir.ui.view">
+            <field name="name">Project_Type.tree.view</field>
+            <field name="model">project_type</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="project_type" required="True"/>
+                </tree>
+            </field>
+        </record>
+        <!-- Project_Type Action -->
+
+        <record id="Project_Type_action" model="ir.actions.act_window">
+            <field name="name">Project_Type</field>
+            <field name="res_model">project_type</field>
+            <field name="view_mode">tree,form</field>
+
+        </record>
+        <!-- Projects form view -->
+        <record id="Projects_form_view" model="ir.ui.view">
+            <field name="name">Projects.form.view</field>
+            <field name="model">projects</field>
+            <field name="arch" type="xml">
+                <form string="Projects">
+                    <header>
+                        <button name="action_confirm" type="object" class="oe_highlight" string="تأكيد"
+                                states="draft"/>
+                        <button name="action_draft" type="object" class="oe_highlight" string="التعين كمبدئي"
+                                attrs="{'invisible':('state', '=', 'draft')}"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,confirm"/>
+                    </header>
+
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="seq15" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group string="معلومات المشروعات">
+                            <group>
+
+                                <field name="per_id" required="True" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="Start_date" invisible="1"/>
+                                <field name="end_date" invisible="1"/>
+                            </group>
+                            <group>
+                                <field name="project_type_id" required="True"
+                                       options="{'horizontal': true}" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="project_name" required="True"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            </group>
+
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <!-- Projects tree view -->
+        <record id="Projects_tree_view" model="ir.ui.view">
+            <field name="name">Projects.tree.view</field>
+            <field name="model">projects</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="per_id" required="True"/>
+                    <field name="project_type_id" required="True"/>
+                    <field name="project_name" required="True"/>
+
+                </tree>
+            </field>
+        </record>
+        <!-- Search view of Projects -->
+        <record id="view_projects_search" model="ir.ui.view">
+            <field name="name">view.projects.search</field>
+            <field name="model">projects</field>
+            <field name="arch" type="xml">
+                <search string="Projects">
+                    <field name="project_name"/>
+                    <filter name="by_state" string="State" domain="[]" context="{'group_by':'state'}"/>
+                </search>
+            </field>
+        </record>
+
+        <record id="project_form_view_pivot" model="ir.ui.view">
+            <field name="name">project.form.view</field>
+            <field name="model">projects</field>
+            <field name="arch" type="xml">
+                <pivot string="Project Analysis">
+                    <field name="department_id" type="row"/>
+                    <field name="state" type="col"/>
+
+                </pivot>
+            </field>
+        </record>
+
+        <!-- Graph View of projects -->
+        <record id="view_project_graph" model="ir.ui.view">
+            <field name="name">view.project.graph</field>
+            <field name="model">projects</field>
+            <field name="arch" type="xml">
+                <graph string="projects" type="pie">
+                    <field name="state" type="row"/>
+                    <field name="department_id" type="column"/>
+                    <!--						<field name="visit_type" type="measure"/>-->
+                </graph>
+            </field>
+        </record>
+
+
+        <!-- Projects Action -->
+
+        <record id="Projects_action" model="ir.actions.act_window">
+            <field name="name">Projects</field>
+            <field name="res_model">projects</field>
+            <field name="view_mode">tree,form,pivot,graph</field>
+
+        </record>
+        <menuitem
+                id="Animal_production_root"
+                name="Animal Production"
+                web_icon="animal_production,static/description/icon.png"
+                sequence="0"
+        />
+        <menuitem
+                id="Animal_production_menu_sub"
+                name="Operations"
+                parent="Animal_production_root"
+                sequence="1"
+        />
+
+
+        <menuitem
+                id="Animal_production_menu"
+                name="Projects"
+                parent="Animal_production_root"
+                sequence="2"
+        />
+        <menuitem
+                id="Animal_report_menu"
+                name="Reports"
+                parent="Animal_production_root"
+                sequence="4"
+        />
+        <menuitem
+                id="Animal_confirm_report_menu"
+                name="Confirmations"
+                parent="Animal_report_menu"
+                action="confirm_report_wizard_action"
+                sequence="3"
+        />
+        <menuitem
+                id="Animal_order_report_menu"
+                name="Orders"
+                parent="Animal_report_menu"
+                action="order_report_wizard_action"
+                sequence="1"
+        />
+        <menuitem
+                id="Animal_reject_order_report_menu"
+                name="reject Orders"
+                parent="Animal_report_menu"
+                action="reject_report_wizard_action"
+                sequence="5"
+        />
+        <menuitem
+                id="Animal_condition_report_menu"
+                name="Conditions"
+                parent="Animal_report_menu"
+                action="condition_report_wizard_action"
+                sequence="6"
+        />
+        <menuitem
+                id="Animal_policy_report_menu"
+                name="policies"
+                parent="Animal_report_menu"
+                action="policy_report_wizard_action"
+                sequence="7"
+        />
+
+
+        <menuitem
+                id="Animal_visit_report_menu"
+                name="Visits"
+                parent="Animal_report_menu"
+                action="visit_report_wizard_action"
+                sequence="2"
+        />
+        <menuitem
+                id="Animal_project_report_menu"
+                name="Project"
+                parent="Animal_report_menu"
+                action="project_report_wizard_action"
+                sequence="4"
+        />
+
+<!--        ss-->
+        <menuitem
+                id="Animal_production_menu_Projects"
+                name="Projects"
+                parent="Animal_production_menu"
+                action="Projects_action"
+                sequence="2"
+        />
+
+        <menuitem
+                id="Animal_production_menu_Applicant"
+                name="Applicants"
+                parent="Animal_production_menu_sub"
+                action="Applicant_action"
+                sequence="1"
+        />
+        <menuitem
+                id="Animal_production_menu_Lands"
+                name="Lands"
+                parent="Animal_production_menu_sub"
+                action="Lands_action"
+                sequence="2"
+        />
+        <menuitem
+                id="Animal_production_menu_Orders"
+                name="Orders"
+                parent="Animal_production_menu_sub"
+                action="Orders_action"
+                sequence="3"
+        />
+        <menuitem
+                id="Animal_production_menu_Recommendation"
+                name="Recommendation"
+                parent="Animal_production_menu_sub"
+                action="Recommendation_action"
+                sequence="5"
+        />
+        <menuitem
+                id="Animal_production_menu_Permission"
+                name="Permission"
+                parent="Animal_production_menu_sub"
+                action="Permission_action"
+                sequence="7"
+        />
+
+
+        <menuitem
+                id="Animal_production_menu_conf"
+                name="Configuration"
+                parent="Animal_production_root"
+                sequence="100"
+        />
+        <menuitem
+                id="Animal_production_menu_states"
+                name="States"
+                parent="Animal_production_menu_conf"
+                action="states_action"
+                sequence="1"
+        />
+        <menuitem
+                id="Animal_production_menu_localities"
+                name="localities"
+                parent="Animal_production_menu_conf"
+                action="Localities_action"
+                sequence="2"
+        />
+        <menuitem
+                id="Animal_production_menu_areas"
+                name="areas"
+                parent="Animal_production_menu_conf"
+                action="areas_action"
+                sequence="3"
+        />
+
+        <menuitem
+                id="Animal_production_menu_window"
+                name="Window"
+                parent="Animal_production_menu_conf"
+                action="window_action"
+                sequence="4"
+        />
+        <menuitem
+                id="Animal_production_menu_departments"
+                name="Departments"
+                parent="Animal_production_menu_conf"
+                action="departments_action"
+                sequence="5"
+        />
+        <menuitem
+                id="Animal_production_menu_policies"
+                name="Policies"
+                parent="Animal_production_menu_conf"
+                action="policies_action"
+                sequence="6"
+        />
+
+        <menuitem
+                id="Animal_production_menu_conditions"
+                name="Conditions"
+                parent="Animal_production_menu_conf"
+                action="Condition_action"
+                sequence="7"
+        />
+        <menuitem
+                id="Animal_production_menu_Career"
+                name="Career"
+                parent="Animal_production_menu_conf"
+                action="career_action"
+                sequence="8"
+        />
+        <menuitem
+                id="Animal_production_menu_employee"
+                name="Employees"
+                parent="Animal_production_menu_conf"
+                action="Employees_action"
+                sequence="9"
+        />
+
+
+    </data>
+</odoo>

@@ -1,0 +1,22 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+collage_user,collage user,model_na_collage,base.group_user,1,1,1,1
+locals_user,locals user,model_na_locals,base.group_user,1,1,1,1
+nationalities_user,nationalities user,model_na_nationalities,base.group_user,1,1,1,1
+pretyep_user,pretyep user,model_na_pretyep,base.group_user,1,1,1,1
+programs_user,program user,model_na_program,base.group_user,1,1,1,1
+acdemic_user,acdemic user,model_na_acdemic,base.group_user,1,1,1,1
+semester_user,semester user,model_na_semester,base.group_user,1,1,1,1
+specialization_user,specialization user,model_na_specialization,base.group_user,1,1,1,1
+state_user,state user,model_na_state,base.group_user,1,1,1,1
+job_user,job user,model_na_job,base.group_user,1,1,1,1
+parent_user,parent user,model_na_parent,base.group_user,1,1,1,1
+feestype_user,feestype user,model_na_feestype,base.group_user,1,1,1,1
+
+
+
+
+
+
+
+
+

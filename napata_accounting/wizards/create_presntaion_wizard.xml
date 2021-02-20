@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="create_napata_accounting_form" model="ir.ui.view">
+        <field name="name">create_presntaion_wizard</field>
+        <field name="model">create.presntaion</field>
+        <field name="arch" type="xml">
+            <form string="Create Presntaion">
+                <group class="oe_title">
+                    <field name="mis"/>
+                    <field name="name"/>
+
+                </group>
+                <footer>
+                    <button name="create_presntaion" string="Create" type="object"
+                                 context="{'default_name', '=', active_id'}"
+
+                            class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="create_napata_accounting_wizard" model="ir.actions.act_window">
+        <field name="name">Presntaionwizard</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">create.presntaion</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="create_napata_accounting_form"/>
+        <field name="target">new</field>
+    </record>
+</odoo>

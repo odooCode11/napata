@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <data>
+
+		<!-- Report Definition, registration -->
+		<report
+			id="visit_report"
+            string="Visits details"
+            model="visits"
+            report_type="qweb-pdf"
+            name="animal_production.visit_template"
+		/>
+
+    </data>
+</odoo>

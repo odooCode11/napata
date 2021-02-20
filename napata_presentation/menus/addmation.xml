@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+ <menuitem id="menu_na_napata_root" name="The Register"
+                  sequence="1"
+                  web_icon="openeducat_admission,static/description/icon.png"/>
+<!--        registration -->
+         <menuitem id="menu_na_admissions_root" name="Admissions"
+                  parent="menu_na_napata_root"
+                  sequence="20" action="admissions_list_action"/>
+
+
+
+
+
+
+
+
+
+    </data>
+</odoo>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="reject_template">
+            <t t-call="web.html_container">
+                <div class="article">
+                    <link rel="stylesheet" href="/animal_production/static/src/css/rtl.css"/>
+                    <font style="font-family: 'Amiri', serif;">
+                        <div class="header">
+                            <div class="row"
+                                 style="font-family: 'Amiri', 'serif';width: 99%;height: 103px;margin-left: 5px;">
+                                <div style="width: 33%;">
+                                    <img class="pull-left" src="/animal_production/static/img/images.jpeg" width="100"
+                                         height="100"/>
+                                </div>
+
+                                <div class="text-center" style="width: 34%;">
+                                    <h4 align="center">بسم الله الرحمن الرحيم</h4>
+                                    <h4 align="center">جمهورية السودان</h4>
+                                    <h4 align="center">وزارة الزراعة والثروة الحيوانية والري</h4>
+                                    <h4 align="center">إدارة اﻹنتاج الحيواني</h4>
+                                </div>
+
+                                <div class="text-right" style="width: 33%;">
+                                    <img class="pull-right" src="/animal_production/static/img/khartoum.jpeg"
+                                         width="100" height="100"/>
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <t t-if="params == 'general'">
+                            <h3 class="text-center">
+                                <strong>تقرير  عن الطلبات المرفوضه</strong>
+                            </h3>
+                        </t>
+                        <t t-if="params == 'period_only'">
+                            <h4 class="text-center" dir="rtl">
+                                <strong>تقرير عن الطلبات المرفوضه </strong>
+                                 <strong>في الفترة من:</strong>
+                                <t t-esc="from_date"/>
+                                <strong>إلى:</strong>
+                                <t t-esc="to_date"/>
+                            </h4>
+                        </t>
+                        <t t-if="params == 'period_state'">
+                            <h4 class="text-center" dir="rtl">
+                                <strong>تقرير عن الطلبات المرفوضه في ولاية:</strong>
+                                <t t-esc="state_name"/>
+                                <strong>في الفترة من:</strong>
+                                <t t-esc="from_date"/>
+                                <strong>إلى:</strong>
+                                <t t-esc="to_date"/>
+                            </h4>
+                        </t>
+                        <t t-if="params == 'period_locality'">
+                            <h4 class="text-center" dir="rtl">
+                                <strong>تقرير عن الطلبات المرفوضه في محلية:</strong>
+                                <t t-esc="locality_name"/>
+                                <strong>في الفترة من:</strong>
+                                <t t-esc="from_date"/>
+                                <strong>إلى:</strong>
+                                <t t-esc="to_date"/>
+                            </h4>
+                        </t>
+
+                       <t t-if="params == 'period_area'">
+                            <h4 class="text-center" dir="rtl">
+                                <strong>تقرير عن الطلبات  المرفوضه في منطقة:</strong>
+                                <t t-esc="area_name"/>
+                                <strong>في الفترة من:</strong>
+                                <t t-esc="from_date"/>
+                                <strong>إلى:</strong>
+                                <t t-esc="to_date"/>
+                            </h4>
+                        </t>
+
+                         <t t-if="params == 'period_department'">
+                            <h4 class="text-center" dir="rtl">
+                                <strong>تقرير عن الطلبات المرفوضه في قسم:</strong>
+                                <t t-esc="department_name"/>
+                                <strong>في الفترة من:</strong>
+                                <t t-esc="from_date"/>
+                                <strong>إلى:</strong>
+                                <t t-esc="to_date"/>
+                            </h4>
+                        </t>
+                         <t t-if="params == 'period_applicant'">
+                            <h4 class="text-center" dir="rtl">
+                                <strong>تقرير عن الطلبات المرفوضه  للسيد :</strong>
+                                <t t-esc="Applicant_name"/>
+                                <strong>في الفترة من:</strong>
+                                <t t-esc="from_date"/>
+                                <strong>إلى:</strong>
+                                <t t-esc="to_date"/>
+                            </h4>
+                        </t>
+                        <br/>
+                        <table dir="rtl" class="table-bordered" style="border: 1px solid black; width: 100%">
+                            <thead style="background-color: #cfd3d3;">
+
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong>رقم الطلب</strong>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong>نوع الطلب</strong>
+                                </th>
+                                <t t-if="params != 'period_applicant'">
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong>مقدم الطلب</strong>
+                                </th>
+                                </t>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong>رقم الهاتف</strong>
+                                </th>
+                                  <t t-if="params != 'period_department'">
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong>القسم</strong>
+                                </th>
+                                  </t>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong>النافذة</strong>
+                                </th>
+                                <t t-if="params != 'period_state'">
+                                    <th class="text-center" style="border: 1px solid black;">
+                                        <strong>الولاية</strong>
+                                    </th>
+                                </t>
+
+                            </thead>
+                            <tbody>
+                                <t t-foreach="docs" t-as="o">
+                                    <tr>
+                                        <td class="text-center" style="border: 1px solid black;">
+                                            <span t-field="o.name"/>
+                                        </td>
+                                        <td class="text-center" style="border: 1px solid black;">
+                                            <span t-field="o.order_type"/>
+                                        </td>
+                                        <t t-if="params != 'period_applicant'">
+                                        <td class="text-center" style="border: 1px solid black;">
+                                            <span t-field="o.Applicant_id.name"/>
+                                        </td>
+                                        </t>
+                                        <td class="text-center" style="border: 1px solid black;">
+                                            <span t-field="o.Applicant_id._Phone_number"/>
+                                        </td>
+                                        <t t-if="params != 'period_department'">
+                                        <td class="text-center" style="border: 1px solid black;">
+                                            <span t-field="o.department_id.name"/>
+                                        </td>
+                                        </t>
+
+                                        <td class="text-center" style="border: 1px solid black;">
+                                            <span t-field="o.window_id.name"/>
+                                        </td>
+                                        <t t-if="params != 'period_state'">
+                                            <td class="text-center" style="border: 1px solid black;">
+                                                <span t-field="o.window_id.state_id.name"/>
+                                            </td>
+                                        </t>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                    </font>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>

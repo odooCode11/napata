@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="condition_template">
+            <t t-call="web.html_container">
+                <div class="article">
+                    <link rel="stylesheet" href="/animal_production/static/src/css/rtl.css"/>
+                    <font style="font-family: 'Amiri', serif;">
+                        <div class="header">
+                            <div class="row"
+                                 style="font-family: 'Amiri', 'serif';width: 99%;height: 103px;margin-left: 5px;">
+                                <div style="width: 33%;">
+                                    <img class="pull-left" src="/animal_production/static/img/images.jpeg" width="100"
+                                         height="100"/>
+                                </div>
+
+                                <div class="text-center" style="width: 34%;">
+                                    <h4 align="center">بسم الله الرحمن الرحيم</h4>
+                                    <h4 align="center">جمهورية السودان</h4>
+                                    <h4 align="center">وزارة الزراعة والثروة الحيوانية والري</h4>
+                                    <h4 align="center">إدارة اﻹنتاج الحيواني</h4>
+                                </div>
+
+                                <div class="text-right" style="width: 33%;">
+                                    <img class="pull-right" src="/animal_production/static/img/khartoum.jpeg"
+                                         width="100" height="100"/>
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                        <br/>
+                        <br/>
+
+                     <t t-if="params == 'period_only'">
+                            <h4 class="text-center" dir="rtl">
+                                <strong>تقرير عن الشروط في فتره</strong>
+                                 <strong>في الفترة من:</strong>
+                                <t t-esc="from_date"/>
+                                <strong>إلى:</strong>
+                                <t t-esc="to_date"/>
+                            </h4>
+                        </t>
+
+                         <t t-if="params == 'period_department'">
+                            <h4 class="text-center" dir="rtl">
+                                <strong>تقرير عن الشروط في قسم:</strong>
+                                <t t-esc="department_name"/>
+                                <strong>في الفترة من:</strong>
+                                <t t-esc="from_date"/>
+                                <strong>إلى:</strong>
+                                <t t-esc="to_date"/>
+                            </h4>
+                        </t>
+                        <br/>
+                        <table dir="rtl" class="table-bordered" style="border: 1px solid black; width: 100%">
+                            <thead style="background-color: #cfd3d3;">
+
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong>رقم الشرط</strong>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong>نوع الشرط</strong>
+                                </th>
+
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong>وصف الشرط</strong>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong>تاريخ تطبيق الشرط</strong>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong>تاريخ نهاية الشرط</strong>
+                                </th>
+                                <t t-if="params != 'period_department'">
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong>القسم</strong>
+                                </th>
+                                </t>
+
+                            </thead>
+                            <tbody>
+                                <t t-foreach="docs" t-as="o">
+                                    <tr>
+                                        <td class="text-center" style="border: 1px solid black;">
+                                            <span t-field="o.seq7"/>
+                                        </td>
+                                        <td class="text-center" style="border: 1px solid black;">
+                                            <span t-field="o.Condition_Type"/>
+                                        </td>
+                                        <td class="text-center" style="border: 1px solid black;">
+                                            <span t-field="o.Condition_Description"/>
+                                        </td>
+                                        <td class="text-center" style="border: 1px solid black;">
+                                            <span t-field="o.f_date"/>
+                                        </td>
+                                        <td class="text-center" style="border: 1px solid black;">
+                                            <span t-field="o.l_date"/>
+                                        </td>
+                                        <t t-if="params != 'period_department'">
+                                        <td class="text-center" style="border: 1px solid black;">
+                                            <span t-field="o.department_id.name"/>
+                                        </td>
+                                        </t>
+
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                    </font>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+         <menuitem id="menu_na_report_root" name="Reports"
+                  parent="menu_na_napata_root"
+                  sequence="40" action="registrar_assistant_list_action"/>
+
+
+
+
+
+
+
+
+
+    </data>
+</odoo>

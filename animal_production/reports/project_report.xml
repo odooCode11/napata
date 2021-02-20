@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <data>
+
+		<!-- Report Definition, registration -->
+		<report
+			id="project_report"
+            string="project details"
+            model="projects"
+            report_type="qweb-pdf"
+            name="animal_production.project_template"
+		/>
+
+    </data>
+</odoo>

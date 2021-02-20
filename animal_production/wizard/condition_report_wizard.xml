@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="condition_report_wizard_view_form" model="ir.ui.view">
+            <field name="name">condition.report.wizard.view.form</field>
+            <field name="model">condition.report.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Claims Report">
+                    <sheet>
+                        <group>
+                            <field name="parameter_id" required="1"/>
+                        </group>
+                        <group>
+
+                            <field name="department_id" attrs="{'invisible': [('parameter_id', '!=', 'period_department')],
+                                                                'required': [('parameter_id', '=', 'period_department')]}"/>
+
+                        </group>
+                        <group col="2">
+                            <group>
+                                <field name="from_date" attrs="{'invisible': [('parameter_id', '=', 'general')],
+                                                                'required': [('parameter_id', '!=', 'general')]}"/>
+                            </group>
+                            <group>
+                                <field name="to_date" attrs="{'invisible': [('parameter_id', '=', 'general')],
+                                                              'required': [('parameter_id', '!=', 'general')]}"/>
+                            </group>
+                        </group>
+                        <footer>
+                            <button name="get_report" string="طباعة" type="object" class="btn-primary" icon="fa-print"/>
+                            أو
+                            <button string="إلغاء" class="btn-danger" special="cancel" icon="fa-close"/>
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <act_window id="condition_report_wizard_action"
+                    name="Condition Report"
+                    res_model="condition.report.wizard"
+                    view_mode="form"
+                    target="new"
+        />
+
+    </data>
+</odoo>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+<!--        registration -->
+         <menuitem id="menu_na_configuration__root" name="configuration"
+                  parent="menu_na_napata_root"
+                  sequence="50"/>
+
+
+
+
+
+            <menuitem id="presntaionfees_management_menu" name="Presntaion Fees"
+              parent="menu_na_configuration__root"  sequence="10"
+                      action="presntaionfees_list_action"/>
+
+
+            <menuitem id="studyfees_management_menu" name="ٍStudy Fees"
+              parent="menu_na_configuration__root"  sequence="20"
+                      action="studyfees_list_action"/>
+
+                      <menuitem id="management_fees_menu" name="Management Fees"
+              parent="menu_na_configuration__root"  sequence="30"
+                      action="management_fees_tree_view"/>
+
+
+
+
+
+
+
+    </data>
+</odoo>

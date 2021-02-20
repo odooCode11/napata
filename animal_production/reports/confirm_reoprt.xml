@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <data>
+
+		<!-- Report Definition, registration -->
+		<report
+			id="confirm_report"
+            string="confirm details"
+            model="permission"
+            report_type="qweb-pdf"
+            name="animal_production.confirm_template"
+            file="animal_production.confirm_template"
+			menu="False"
+		/>
+
+    </data>
+</odoo>

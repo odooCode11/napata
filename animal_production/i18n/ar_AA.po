@@ -1,0 +1,3163 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* animal_production
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-19 20:44+0000\n"
+"PO-Revision-Date: 2020-11-19 20:44+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_conditions__l_date
+msgid " Condition End Date"
+msgstr "تاريخ إنتهاء الشرط"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_conditions__f_date
+msgid " Condition Stare Date"
+msgstr "تاريخ بداية الشرط"
+
+#. module: animal_production
+#: model:ir.actions.report,name:animal_production.reject_report
+msgid " rejectOrder details"
+msgstr "تفاصيل الطلبات المرفوضة"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Lands_tree_view
+msgid "09123..."
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.condition_template
+#: model_terms:ir.ui.view,arch_db:animal_production.confirm_template
+#: model_terms:ir.ui.view,arch_db:animal_production.orders_template
+#: model_terms:ir.ui.view,arch_db:animal_production.policies_template
+#: model_terms:ir.ui.view,arch_db:animal_production.project_template
+#: model_terms:ir.ui.view,arch_db:animal_production.reject_template
+#: model_terms:ir.ui.view,arch_db:animal_production.visit_template
+msgid "<strong>إلى:</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.project_template
+msgid "<strong>اسم المشروع</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.confirm_template
+#: model_terms:ir.ui.view,arch_db:animal_production.project_template
+#: model_terms:ir.ui.view,arch_db:animal_production.visit_template
+msgid "<strong>الارض</strong>"
+msgstr "<strong>الارض</strong"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.confirm_template
+msgid "<strong>التصاديق في فتره</strong>\n"
+"                                 <strong>في الفترة من:</strong>"
+msgstr "<strong>التصاديق في فتره</strong>"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.condition_template
+#: model_terms:ir.ui.view,arch_db:animal_production.confirm_template
+#: model_terms:ir.ui.view,arch_db:animal_production.orders_template
+#: model_terms:ir.ui.view,arch_db:animal_production.policies_template
+#: model_terms:ir.ui.view,arch_db:animal_production.project_template
+#: model_terms:ir.ui.view,arch_db:animal_production.reject_template
+#: model_terms:ir.ui.view,arch_db:animal_production.visit_template
+msgid "<strong>القسم</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.project_template
+msgid "<strong>المالك</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.confirm_template
+#: model_terms:ir.ui.view,arch_db:animal_production.project_template
+msgid "<strong>المحلية</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.confirm_template
+msgid "<strong>المعتمد</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.confirm_template
+#: model_terms:ir.ui.view,arch_db:animal_production.project_template
+msgid "<strong>المنطقة</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.visit_template
+msgid "<strong>الموظف</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.orders_template
+#: model_terms:ir.ui.view,arch_db:animal_production.reject_template
+msgid "<strong>النافذة</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.visit_template
+msgid "<strong>النافذه</strong>"
+msgstr "\"<strong>النافذه</strong>"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.confirm_template
+#: model_terms:ir.ui.view,arch_db:animal_production.orders_template
+#: model_terms:ir.ui.view,arch_db:animal_production.project_template
+#: model_terms:ir.ui.view,arch_db:animal_production.reject_template
+#: model_terms:ir.ui.view,arch_db:animal_production.visit_template
+msgid "<strong>الولاية</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.confirm_template
+msgid "<strong>تاريخ البداية</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.visit_template
+msgid "<strong>تاريخ التوصيه</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.visit_template
+msgid "<strong>تاريخ الزياره</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.confirm_template
+msgid "<strong>تاريخ النهاية</strong>"
+msgstr "<strong>تاريخ النهاية</strong"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.policies_template
+msgid "<strong>تاريخ تطبيق السياسة</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.condition_template
+msgid "<strong>تاريخ تطبيق الشرط</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.policies_template
+msgid "<strong>تاريخ نهاية السياسة</strong>"
+msgstr "strong>تاريخ نهاية السياسة</strong>"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.condition_template
+msgid "<strong>تاريخ نهاية الشرط</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.reject_template
+msgid "<strong>تقرير  عن الطلبات المرفوضه</strong>"
+msgstr "strong>تقرير  عن الطلبات المرفوضه</strong>"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.confirm_template
+msgid "<strong>تقرير عام عن التصاديق</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.orders_template
+msgid "<strong>تقرير عام عن الطلبات</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.project_template
+msgid "<strong>تقرير عام عن المشاروعات</strong>"
+msgstr "تقرير  عن المشاروعات"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.visit_template
+msgid "<strong>تقرير عن  الزيارات  :</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.confirm_template
+msgid "<strong>تقرير عن التصاديق في قسم :-</strong>"
+msgstr "تقرير عن التصاديق في قسم"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.confirm_template
+msgid "<strong>تقرير عن التصاديق في محلية:</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.confirm_template
+msgid "<strong>تقرير عن التصاديق في منطقة:</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.confirm_template
+msgid "<strong>تقرير عن التصاديق وفي ولاية:</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.visit_template
+msgid "<strong>تقرير عن الزيارات في فتره</strong>\n"
+"                                <strong>في الفترة من:</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.visit_template
+msgid "<strong>تقرير عن الزيارات في محلية:</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.visit_template
+msgid "<strong>تقرير عن الزيارات في منطقة:</strong>"
+msgstr "تقرير عن الزيارات في فترة"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.visit_template
+msgid "<strong>تقرير عن الزيارات وفي ولاية:</strong>"
+msgstr "تقرير عن الزيارات في ولايه"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.visit_template
+msgid "<strong>تقرير عن الزيارات</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.policies_template
+msgid "<strong>تقرير عن السياسات في فتره</strong>\n"
+"                                 <strong>في الفترة من:</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.policies_template
+msgid "<strong>تقرير عن السياسات في قسم:</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.condition_template
+msgid "<strong>تقرير عن الشروط في فتره</strong>\n"
+"                                 <strong>في الفترة من:</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.condition_template
+msgid "<strong>تقرير عن الشروط في قسم:</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.reject_template
+msgid "<strong>تقرير عن الطلبات  المرفوضه في منطقة:</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.reject_template
+msgid "<strong>تقرير عن الطلبات المرفوضه  للسيد :</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.reject_template
+msgid "<strong>تقرير عن الطلبات المرفوضه </strong>\n"
+"                                 <strong>في الفترة من:</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.reject_template
+msgid "<strong>تقرير عن الطلبات المرفوضه في قسم:</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.reject_template
+msgid "<strong>تقرير عن الطلبات المرفوضه في محلية:</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.reject_template
+msgid "<strong>تقرير عن الطلبات المرفوضه في ولاية:</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.orders_template
+msgid "<strong>تقرير عن الطلبات في فتره</strong>\n"
+"                                 <strong>في الفترة من:</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.orders_template
+#: model_terms:ir.ui.view,arch_db:animal_production.visit_template
+msgid "<strong>تقرير عن الطلبات في قسم:</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.orders_template
+msgid "<strong>تقرير عن الطلبات في محلية:</strong>"
+msgstr "تقرير عن الطلبات في محليه"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.orders_template
+msgid "<strong>تقرير عن الطلبات في منطقة:</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.orders_template
+msgid "<strong>تقرير عن الطلبات وفي ولاية:</strong>"
+msgstr "تقرير  عن الطلبات وفي ولاية"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.project_template
+msgid "<strong>تقرير عن المشاروعات في فتره</strong>\n"
+"                                <strong>في الفترة من:</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.project_template
+msgid "<strong>تقرير عن المشاروعات في قسم:</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.project_template
+msgid "<strong>تقرير عن المشاروعات في محلية:</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.project_template
+msgid "<strong>تقرير عن المشاروعات في منطقة:</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.project_template
+msgid "<strong>تقرير عن المشاروعات وفي ولاية:</strong>"
+msgstr "\"<strong>تقرير عن المشروعات في ولاية معينة</strong>"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.orders_template
+msgid "<strong>تقرير عن طلبات ال  :</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.orders_template
+msgid "<strong>تقرير عن طلبات السيد :</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.confirm_template
+#: model_terms:ir.ui.view,arch_db:animal_production.project_template
+msgid "<strong>رقم التصديق</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.visit_template
+msgid "<strong>رقم الزياره</strong>"
+msgstr "رقم الزيارة"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.policies_template
+msgid "<strong>رقم السياسة</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.condition_template
+msgid "<strong>رقم الشرط</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.orders_template
+#: model_terms:ir.ui.view,arch_db:animal_production.reject_template
+msgid "<strong>رقم الطلب</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.project_template
+msgid "<strong>رقم المشروع</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.orders_template
+#: model_terms:ir.ui.view,arch_db:animal_production.reject_template
+msgid "<strong>رقم الهاتف</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.condition_template
+#: model_terms:ir.ui.view,arch_db:animal_production.confirm_template
+#: model_terms:ir.ui.view,arch_db:animal_production.orders_template
+#: model_terms:ir.ui.view,arch_db:animal_production.policies_template
+#: model_terms:ir.ui.view,arch_db:animal_production.project_template
+#: model_terms:ir.ui.view,arch_db:animal_production.reject_template
+#: model_terms:ir.ui.view,arch_db:animal_production.visit_template
+msgid "<strong>في الفترة من:</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.confirm_template
+#: model_terms:ir.ui.view,arch_db:animal_production.orders_template
+#: model_terms:ir.ui.view,arch_db:animal_production.reject_template
+msgid "<strong>مقدم الطلب</strong>"
+msgstr "مقدم الطلب"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.visit_template
+msgid "<strong>نص التوصيه</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.confirm_template
+msgid "<strong>نوع التصديق</strong>"
+msgstr "نوع التصديق"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.visit_template
+msgid "<strong>نوع الزياره</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.policies_template
+msgid "<strong>نوع السياسة</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.condition_template
+msgid "<strong>نوع الشرط</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.orders_template
+#: model_terms:ir.ui.view,arch_db:animal_production.reject_template
+msgid "<strong>نوع الطلب</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.project_template
+msgid "<strong>نوع المشروع</strong>"
+msgstr "نوع المشروع"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.policies_template
+msgid "<strong>وصف السياسة</strong>"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.condition_template
+msgid "<strong>وصف الشرط</strong>"
+msgstr ""
+
+#. module: animal_production
+#: selection:visits,general_Shape:0
+#: selection:visits,offal_cleaning:0
+#: selection:visits,offal_treatment:0
+#: selection:visits,skin_room:0
+msgid "Acceptable"
+msgstr "مقبول"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_recommendation__emp_id
+msgid "Accredited"
+msgstr "المعتمد"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Recommendation_form_view
+msgid "Add Permission"
+msgstr "إضافة تصديق"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Permission_form_view
+msgid "Add Project"
+msgstr "إضافة مشروع"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Visits_form_view
+msgid "Add Recommendations"
+msgstr "إضافة توصية"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Orders_form_view
+msgid "Add Visit"
+msgstr "اضافة زيارة"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_applicant___address
+#: model:ir.model.fields,field_description:animal_production.field_employees___address
+msgid "Address"
+msgstr "العنوان"
+
+#. module: animal_production
+#: selection:departments,type:0
+#: selection:project_type,project_type:0
+msgid "Agency"
+msgstr "وكالة"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Visits_form_view
+msgid "Agency Building"
+msgstr "مباني الوكالة"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Visits_form_view
+msgid "Agency Equipments"
+msgstr "معدات الوكالة"
+
+#. module: animal_production
+#: model:ir.ui.menu,name:animal_production.Animal_production_root
+msgid "Animal Production"
+msgstr "الإنتاج الحيواني"
+
+#. module: animal_production
+#: model:ir.module.category,name:animal_production.animal_production_management_access_cat
+msgid "Animal Production Management"
+msgstr "إدارة الإنتاج الحيواني"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Applicant_form_view
+#: model_terms:ir.ui.view,arch_db:animal_production.view_applicant_search
+msgid "Applicant"
+msgstr "مقدم الطلب"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_applicant__name
+#: model:ir.model.fields,field_description:animal_production.field_order_report_wizard__Applicant_id
+#: model:ir.model.fields,field_description:animal_production.field_orders__Applicant_id
+#: model:ir.model.fields,field_description:animal_production.field_project_report_wizard__Applicant_id
+msgid "Applicant Name"
+msgstr "إسم مقدم الطلب"
+
+#. module: animal_production
+#: model:ir.actions.act_window,name:animal_production.Applicant_action
+#: model:ir.ui.menu,name:animal_production.Animal_production_menu_Applicant
+msgid "Applicants"
+msgstr "مقدمين الطلب"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_confirm_report_wizard__area_id
+#: model:ir.model.fields,field_description:animal_production.field_order_report_wizard__area_id
+#: model:ir.model.fields,field_description:animal_production.field_orders__area_id
+#: model:ir.model.fields,field_description:animal_production.field_permission__area_id
+#: model:ir.model.fields,field_description:animal_production.field_project_report_wizard__area_id
+#: model:ir.model.fields,field_description:animal_production.field_projects__area_id
+#: model:ir.model.fields,field_description:animal_production.field_reject_report_wizard__area_id
+#: model:ir.model.fields,field_description:animal_production.field_visit_report_wizard__area_id
+#: model:ir.model.fields,field_description:animal_production.field_visits__area_id
+msgid "Area"
+msgstr "المنطقة"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_areas__name
+#: model:ir.model.fields,field_description:animal_production.field_departments__area_id
+#: model:ir.model.fields,field_description:animal_production.field_window__area_id
+msgid "Area Name"
+msgstr " المنطقة"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__area_space
+msgid "Area Space"
+msgstr "مساحة المنطقة"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Areas_form_view
+#: model_terms:ir.ui.view,arch_db:animal_production.view_areas_search
+msgid "Areas"
+msgstr "المناطق"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__basin_dimension
+msgid "Basin Dimension"
+msgstr "بعد الأحواض"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__basin_number
+msgid "Basin Number"
+msgstr "عدد الأحواض"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__basin_purge
+msgid "Basin Purge"
+msgstr "تطهير الأحواض"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__batch_machine
+msgid "Batch Machine"
+msgstr "مكانية الحزم"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__big_barrels
+msgid "Big Barrels"
+msgstr "البراميل الكبيرة"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_applicant___Birth_date
+#: model:ir.model.fields,field_description:animal_production.field_employees___Birth_date
+msgid "Birth date"
+msgstr "تاريخ الميلاد"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__building_State
+msgid "Building"
+msgstr "المباني"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__building_space
+msgid "Building Space"
+msgstr "مساحة المباني"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__build_state
+#: model:ir.model.fields,field_description:animal_production.field_visits__build_states
+#: model:ir.model.fields,field_description:animal_production.field_visits__building_state
+msgid "Building State"
+msgstr "حالة المباني"
+
+#. module: animal_production
+#: selection:visits,dispose_death:0
+msgid "Burn"
+msgstr "المحرقة"
+
+#. module: animal_production
+#: selection:visits,dispose_death:0
+msgid "Burn And Bury"
+msgstr "الحرق والدفن"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.condition_report_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:animal_production.confirm_report_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:animal_production.lands_form_view
+#: model_terms:ir.ui.view,arch_db:animal_production.order_report_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:animal_production.policy_report_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:animal_production.project_report_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:animal_production.reject_report_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:animal_production.visit_report_wizard_view_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: animal_production
+#: selection:lands,state:0
+msgid "Canceled"
+msgstr "ملغية"
+
+#. module: animal_production
+#: model:ir.ui.menu,name:animal_production.Animal_production_menu_Career
+#: model_terms:ir.ui.view,arch_db:animal_production.Careers_form_view
+#: model_terms:ir.ui.view,arch_db:animal_production.view_Career_search
+#: model_terms:ir.ui.view,arch_db:animal_production.view_employees_search
+msgid "Career"
+msgstr "الوظائف"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_career__name
+#: model:ir.model.fields,field_description:animal_production.field_employees__career_id
+msgid "Career Name"
+msgstr "إسم الوظيفة"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_lands__search_certificate_date
+msgid "Certificate Date"
+msgstr ""
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_lands__search_certificate_id
+#: model:ir.model.fields,field_description:animal_production.field_recommendation__land_id
+#: model:ir.model.fields,field_description:animal_production.field_visits__land_id
+msgid "Certificate Number"
+msgstr "رقم الشهادة"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Visits_form_view
+msgid "Check Agency"
+msgstr "التحقق من شروط الوكالة"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Visits_form_view
+msgid "Check Cattle Farms"
+msgstr "التحقق من شروط مزارع الماشية"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__check_lap
+msgid "Check Lap"
+msgstr "التحقق من المعمل"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Visits_form_view
+msgid "Check factory"
+msgstr "التحقق من شروط  المصانع"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.condition_report_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:animal_production.confirm_report_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:animal_production.order_report_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:animal_production.policy_report_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:animal_production.project_report_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:animal_production.reject_report_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:animal_production.visit_report_wizard_view_form
+msgid "Claims Report"
+msgstr "متطلبات التقرير"
+
+#. module: animal_production
+#: selection:visits,general_State:0
+msgid "Clean"
+msgstr "نظيفة"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Visits_form_view
+msgid "Clearing in Hanger"
+msgstr "النظافة في الحظائر"
+
+#. module: animal_production
+#: model:ir.actions.act_window,name:animal_production.Condition_action
+#: model_terms:ir.ui.view,arch_db:animal_production.department_form_view
+msgid "Condition"
+msgstr "الشرط"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_conditions__Condition_Description
+msgid "Condition Description"
+msgstr "وصف الشرط"
+
+#. module: animal_production
+#: model:ir.actions.act_window,name:animal_production.condition_report_wizard_action
+#: model:ir.model,name:animal_production.model_condition_report_wizard
+msgid "Condition Report"
+msgstr "تقارير الشروط"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_conditions__Condition_Type
+msgid "Condition Type"
+msgstr "نوع الشرط"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__conditioners
+msgid "Conditioners"
+msgstr "الشروط"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_departments__condition_ids
+#: model:ir.ui.menu,name:animal_production.Animal_condition_report_menu
+#: model:ir.ui.menu,name:animal_production.Animal_production_menu_conditions
+msgid "Conditions"
+msgstr "الشروط"
+
+#. module: animal_production
+#: model:ir.ui.menu,name:animal_production.Animal_production_menu_conf
+msgid "Configuration"
+msgstr "الإعدادات"
+
+#. module: animal_production
+#: selection:applicant,state:0
+#: selection:conditions,state:0
+#: selection:departments,state:0
+#: selection:employees,state:0
+#: model_terms:ir.ui.view,arch_db:animal_production.Recommendation_form_view
+#: model_terms:ir.ui.view,arch_db:animal_production.lands_form_view
+#: selection:permission,state:0
+#: selection:policies,state:0
+#: selection:project_type,state:0
+#: selection:projects,state:0
+#: selection:visits,state:0
+msgid "Confirm"
+msgstr "مصدقة"
+
+#. module: animal_production
+#: model:ir.actions.act_window,name:animal_production.confirm_report_wizard_action
+#: model:ir.model,name:animal_production.model_confirm_report_wizard
+msgid "Confirm Report"
+msgstr "تقرير التصديق"
+
+#. module: animal_production
+#: model:ir.ui.menu,name:animal_production.Animal_confirm_report_menu
+msgid "Confirmations"
+msgstr "التصاديق"
+
+#. module: animal_production
+#: selection:lands,state:0
+#: selection:orders,state:0
+#: selection:recommendation,state:0
+msgid "Confirmed"
+msgstr "مؤكد"
+
+#. module: animal_production
+#: selection:visits,Special_knife:0
+msgid "Conformable"
+msgstr "مطابقة"
+
+#. module: animal_production
+#: selection:visits,mop_up_Offal:0
+#: selection:visits,mop_up_liquid_substances:0
+msgid "Conformity"
+msgstr "مطابق"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_applicant__create_uid
+#: model:ir.model.fields,field_description:animal_production.field_areas__create_uid
+#: model:ir.model.fields,field_description:animal_production.field_career__create_uid
+#: model:ir.model.fields,field_description:animal_production.field_condition_report_wizard__create_uid
+#: model:ir.model.fields,field_description:animal_production.field_conditions__create_uid
+#: model:ir.model.fields,field_description:animal_production.field_confirm_report_wizard__create_uid
+#: model:ir.model.fields,field_description:animal_production.field_departments__create_uid
+#: model:ir.model.fields,field_description:animal_production.field_employees__create_uid
+#: model:ir.model.fields,field_description:animal_production.field_lands__create_uid
+#: model:ir.model.fields,field_description:animal_production.field_localities__create_uid
+#: model:ir.model.fields,field_description:animal_production.field_order_report_wizard__create_uid
+#: model:ir.model.fields,field_description:animal_production.field_orders__create_uid
+#: model:ir.model.fields,field_description:animal_production.field_permission__create_uid
+#: model:ir.model.fields,field_description:animal_production.field_policies__create_uid
+#: model:ir.model.fields,field_description:animal_production.field_policy_report_wizard__create_uid
+#: model:ir.model.fields,field_description:animal_production.field_project_report_wizard__create_uid
+#: model:ir.model.fields,field_description:animal_production.field_project_type__create_uid
+#: model:ir.model.fields,field_description:animal_production.field_projects__create_uid
+#: model:ir.model.fields,field_description:animal_production.field_recommendation__create_uid
+#: model:ir.model.fields,field_description:animal_production.field_reject_report_wizard__create_uid
+#: model:ir.model.fields,field_description:animal_production.field_states__create_uid
+#: model:ir.model.fields,field_description:animal_production.field_visit_report_wizard__create_uid
+#: model:ir.model.fields,field_description:animal_production.field_visits__create_uid
+#: model:ir.model.fields,field_description:animal_production.field_window__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_applicant__create_date
+#: model:ir.model.fields,field_description:animal_production.field_areas__create_date
+#: model:ir.model.fields,field_description:animal_production.field_career__create_date
+#: model:ir.model.fields,field_description:animal_production.field_condition_report_wizard__create_date
+#: model:ir.model.fields,field_description:animal_production.field_conditions__create_date
+#: model:ir.model.fields,field_description:animal_production.field_confirm_report_wizard__create_date
+#: model:ir.model.fields,field_description:animal_production.field_departments__create_date
+#: model:ir.model.fields,field_description:animal_production.field_employees__create_date
+#: model:ir.model.fields,field_description:animal_production.field_lands__create_date
+#: model:ir.model.fields,field_description:animal_production.field_localities__create_date
+#: model:ir.model.fields,field_description:animal_production.field_order_report_wizard__create_date
+#: model:ir.model.fields,field_description:animal_production.field_orders__create_date
+#: model:ir.model.fields,field_description:animal_production.field_permission__create_date
+#: model:ir.model.fields,field_description:animal_production.field_policies__create_date
+#: model:ir.model.fields,field_description:animal_production.field_policy_report_wizard__create_date
+#: model:ir.model.fields,field_description:animal_production.field_project_report_wizard__create_date
+#: model:ir.model.fields,field_description:animal_production.field_project_type__create_date
+#: model:ir.model.fields,field_description:animal_production.field_projects__create_date
+#: model:ir.model.fields,field_description:animal_production.field_recommendation__create_date
+#: model:ir.model.fields,field_description:animal_production.field_reject_report_wizard__create_date
+#: model:ir.model.fields,field_description:animal_production.field_states__create_date
+#: model:ir.model.fields,field_description:animal_production.field_visit_report_wizard__create_date
+#: model:ir.model.fields,field_description:animal_production.field_visits__create_date
+#: model:ir.model.fields,field_description:animal_production.field_window__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: animal_production
+#: selection:departments,type:0
+msgid "Cuttle_Farms"
+msgstr "مزارع الماشية"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_permission__recommend_date
+#: model:ir.model.fields,field_description:animal_production.field_visits__Order_date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_condition_report_wizard__department_id
+#: model:ir.model.fields,field_description:animal_production.field_confirm_report_wizard__department_id
+#: model:ir.model.fields,field_description:animal_production.field_order_report_wizard__department_id
+#: model:ir.model.fields,field_description:animal_production.field_permission__department_id
+#: model:ir.model.fields,field_description:animal_production.field_policy_report_wizard__department_id
+#: model:ir.model.fields,field_description:animal_production.field_project_report_wizard__department_id
+#: model:ir.model.fields,field_description:animal_production.field_projects__department_id
+#: model:ir.model.fields,field_description:animal_production.field_reject_report_wizard__department_id
+#: model:ir.model.fields,field_description:animal_production.field_visit_report_wizard__department_id
+msgid "Department"
+msgstr "القسم"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.department_form_view
+msgid "Department Information"
+msgstr "معلومات القسم"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_employees__department_id
+#: model:ir.model.fields,field_description:animal_production.field_orders__department_id
+#: model:ir.model.fields,field_description:animal_production.field_visits__department_id
+msgid "Department Name"
+msgstr "اسم القسم"
+
+#. module: animal_production
+#: model:ir.ui.menu,name:animal_production.Animal_production_menu_departments
+#: model_terms:ir.ui.view,arch_db:animal_production.department_form_view
+#: model_terms:ir.ui.view,arch_db:animal_production.view_departments_search
+#: model_terms:ir.ui.view,arch_db:animal_production.view_employees_search
+#: model_terms:ir.ui.view,arch_db:animal_production.view_order_search
+#: model_terms:ir.ui.view,arch_db:animal_production.view_visit_search
+msgid "Departments"
+msgstr "الأقسام"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_conditions__department_id
+#: model:ir.model.fields,field_description:animal_production.field_departments__name
+#: model:ir.model.fields,field_description:animal_production.field_policies__department_id
+msgid "Departments Name"
+msgstr "إسم القسم"
+
+#. module: animal_production
+#: selection:visits,medical_Detect:0
+msgid "Did Not"
+msgstr "لم يتم"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_lands__e_direction
+msgid "Direction E"
+msgstr "إتجاه الشرق"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_lands__n_direction
+msgid "Direction N"
+msgstr "إتجاه الشمال"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_applicant__display_name
+#: model:ir.model.fields,field_description:animal_production.field_areas__display_name
+#: model:ir.model.fields,field_description:animal_production.field_career__display_name
+#: model:ir.model.fields,field_description:animal_production.field_condition_report_wizard__display_name
+#: model:ir.model.fields,field_description:animal_production.field_conditions__display_name
+#: model:ir.model.fields,field_description:animal_production.field_confirm_report_wizard__display_name
+#: model:ir.model.fields,field_description:animal_production.field_departments__display_name
+#: model:ir.model.fields,field_description:animal_production.field_employees__display_name
+#: model:ir.model.fields,field_description:animal_production.field_lands__display_name
+#: model:ir.model.fields,field_description:animal_production.field_localities__display_name
+#: model:ir.model.fields,field_description:animal_production.field_order_report_wizard__display_name
+#: model:ir.model.fields,field_description:animal_production.field_orders__display_name
+#: model:ir.model.fields,field_description:animal_production.field_permission__display_name
+#: model:ir.model.fields,field_description:animal_production.field_policies__display_name
+#: model:ir.model.fields,field_description:animal_production.field_policy_report_wizard__display_name
+#: model:ir.model.fields,field_description:animal_production.field_project_report_wizard__display_name
+#: model:ir.model.fields,field_description:animal_production.field_project_type__display_name
+#: model:ir.model.fields,field_description:animal_production.field_projects__display_name
+#: model:ir.model.fields,field_description:animal_production.field_recommendation__display_name
+#: model:ir.model.fields,field_description:animal_production.field_reject_report_wizard__display_name
+#: model:ir.model.fields,field_description:animal_production.field_report_animal_production_condition_template__display_name
+#: model:ir.model.fields,field_description:animal_production.field_report_animal_production_confirm_template__display_name
+#: model:ir.model.fields,field_description:animal_production.field_report_animal_production_orders_template__display_name
+#: model:ir.model.fields,field_description:animal_production.field_report_animal_production_policies_template__display_name
+#: model:ir.model.fields,field_description:animal_production.field_report_animal_production_project_template__display_name
+#: model:ir.model.fields,field_description:animal_production.field_report_animal_production_reject_template__display_name
+#: model:ir.model.fields,field_description:animal_production.field_report_animal_production_visit_template__display_name
+#: model:ir.model.fields,field_description:animal_production.field_states__display_name
+#: model:ir.model.fields,field_description:animal_production.field_visit_report_wizard__display_name
+#: model:ir.model.fields,field_description:animal_production.field_visits__display_name
+#: model:ir.model.fields,field_description:animal_production.field_window__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__dispose_death
+msgid "Dispose Death"
+msgstr "التخلص من الإعدامات"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_lands__distance
+msgid "Distance From Building"
+msgstr "البعد من المباني"
+
+#. module: animal_production
+#: selection:project_type,project_type:0
+msgid "Domestic Farm"
+msgstr "مزارع الدواجن"
+
+#. module: animal_production
+#: selection:visits,medical_Detect:0
+msgid "Done For All"
+msgstr "تم للكل"
+
+#. module: animal_production
+#: selection:visits,medical_Detect:0
+msgid "Done For Some"
+msgstr "تم للبعض"
+
+#. module: animal_production
+#: selection:applicant,state:0
+#: selection:conditions,state:0
+#: selection:departments,state:0
+#: selection:employees,state:0
+#: selection:lands,state:0
+#: selection:orders,state:0
+#: selection:permission,state:0
+#: selection:policies,state:0
+#: selection:project_type,state:0
+#: selection:projects,state:0
+#: selection:recommendation,state:0
+#: selection:visits,state:0
+msgid "Draft"
+msgstr "مبدئي"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__dryer_tables
+msgid "Dryer Tables"
+msgstr "التجفيف"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.lands_form_view
+msgid "E.X ABC1232020dep"
+msgstr "E.XABC123020dep"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_applicant___email
+#: model:ir.model.fields,field_description:animal_production.field_employees___email
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_permission__employee_id
+#: model:ir.model.fields,field_description:animal_production.field_recommendation__employee_id
+#: model:ir.model.fields,field_description:animal_production.field_visits__employee_id
+msgid "Employee Name"
+msgstr "إسم الموظف"
+
+#. module: animal_production
+#: model:ir.actions.act_window,name:animal_production.Employees_action
+#: model:ir.ui.menu,name:animal_production.Animal_production_menu_employee
+#: model_terms:ir.ui.view,arch_db:animal_production.Employees_form_view
+#: model_terms:ir.ui.view,arch_db:animal_production.view_employees_search
+msgid "Employees"
+msgstr "الموظفون"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Employees_form_view
+msgid "Employees Information"
+msgstr "معلومات الموظفين"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_employees__name
+msgid "Employees Name"
+msgstr "إسم الموظف"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_permission__end_date
+#: model:ir.model.fields,field_description:animal_production.field_policies__l_date
+#: model:ir.model.fields,field_description:animal_production.field_projects__end_date
+msgid "End Date"
+msgstr "تاريخ الانتهاء"
+
+#. module: animal_production
+#: selection:visits,Hanger_Capacity:0
+#: selection:visits,area_space:0
+#: selection:visits,basin_number:0
+#: selection:visits,halls_space:0
+#: selection:visits,inner_distribution_of_light:0
+#: selection:visits,skins_keeping:0
+#: selection:visits,stock_Space:0
+#: selection:visits,stores_space:0
+#: selection:visits,water_amount:0
+msgid "Enough"
+msgstr "كافي"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Visits_form_view
+msgid "Environment General  & Cleaning"
+msgstr "البيئة والنظافة العامة"
+
+#. module: animal_production
+#: selection:visits,batch_machine:0
+#: selection:visits,big_barrels:0
+#: selection:visits,dryer_tables:0
+#: selection:visits,halls:0
+#: selection:visits,skin_weigher:0
+#: selection:visits,stores:0
+#: selection:visits,waiter_dashes:0
+#: selection:visits,wash_dash:0
+msgid "Exist"
+msgstr "خروج"
+
+#. module: animal_production
+#: selection:visits,conditioners:0
+#: selection:visits,room_coll:0
+msgid "Existed"
+msgstr "موجود"
+
+#. module: animal_production
+#: selection:visits,basin_purge:0
+#: selection:visits,check_lap:0
+#: selection:visits,external_Fence:0
+#: selection:visits,external_fence:0
+#: selection:visits,feed_presses:0
+#: selection:visits,feed_stock:0
+#: selection:visits,feed_stocks:0
+#: selection:visits,forage_analyzers:0
+#: selection:visits,hanger:0
+#: selection:visits,hanger_wait:0
+#: selection:visits,lap:0
+#: selection:visits,mills:0
+#: selection:visits,mixers:0
+#: selection:visits,product_stock:0
+#: selection:visits,record_stamp:0
+#: selection:visits,sanitation_building:0
+#: selection:visits,silos:0
+#: selection:visits,slaughter_house:0
+#: selection:visits,strip:0
+#: selection:visits,water_circulation:0
+#: selection:visits,worker_residence:0
+#: selection:visits,worker_residences:0
+msgid "Existent"
+msgstr "موجود"
+
+#. module: animal_production
+#: selection:visits,feed_source:0
+msgid "External"
+msgstr "خارجي"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__external_Fence
+#: model:ir.model.fields,field_description:animal_production.field_visits__external_fence
+msgid "External Fence"
+msgstr "السور الخارجي"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Visits_form_view
+msgid "Factory Building"
+msgstr "مباني الوكالة"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Visits_form_view
+msgid "Farms Building"
+msgstr "مباني المزارع"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__feed_presses
+msgid "Feed Presses"
+msgstr "مضغط العلف"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__feed_source
+msgid "Feed Source"
+msgstr "مصدر العلف"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__feed_stock
+msgid "Feed Stock"
+msgstr "مخزن العلف"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__feed_stocks
+msgid "Feed Stocks"
+msgstr "مخازن العلف"
+
+#. module: animal_production
+#: selection:applicant,_gender:0
+#: selection:employees,_gender:0
+#: model_terms:ir.ui.view,arch_db:animal_production.view_employees_search
+msgid "Female"
+msgstr "أنثى"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_permission__fess
+msgid "Fess"
+msgstr "الرسوم"
+
+#. module: animal_production
+#: selection:project_type,project_type:0
+msgid "Fodder Factory"
+msgstr "مصنع الأعلاف"
+
+#. module: animal_production
+#: selection:departments,type:0
+msgid "Fodder_factory"
+msgstr "مصانع الأعلاف"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__forage_analyzers
+msgid "Forage Analyzers"
+msgstr " تحليل الاعلاف"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_condition_report_wizard__from_date
+#: model:ir.model.fields,field_description:animal_production.field_confirm_report_wizard__from_date
+#: model:ir.model.fields,field_description:animal_production.field_order_report_wizard__from_date
+#: model:ir.model.fields,field_description:animal_production.field_policy_report_wizard__from_date
+#: model:ir.model.fields,field_description:animal_production.field_project_report_wizard__from_date
+#: model:ir.model.fields,field_description:animal_production.field_reject_report_wizard__from_date
+#: model:ir.model.fields,field_description:animal_production.field_visit_report_wizard__from_date
+msgid "From"
+msgstr "مِن"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_applicant___gender
+#: model:ir.model.fields,field_description:animal_production.field_employees___gender
+msgid "Gander"
+msgstr "النوع"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.view_employees_search
+msgid "Gender"
+msgstr "النوع"
+
+#. module: animal_production
+#: selection:confirm.report.wizard,parameter_id:0
+#: selection:order.report.wizard,parameter_id:0
+#: selection:project.report.wizard,parameter_id:0
+#: selection:reject.report.wizard,parameter_id:0
+#: selection:visit.report.wizard,parameter_id:0
+#: selection:visits,sanitation:0
+msgid "General"
+msgstr "عام"
+
+#. module: animal_production
+#: selection:visits,power_source:0
+msgid "General Electricity"
+msgstr "كهرباء عامة"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__general_Shape
+msgid "General Shape"
+msgstr "المظهر العام"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__general_State
+msgid "General State For Machine"
+msgstr "الحالة العامة للماكينات"
+
+#. module: animal_production
+#: selection:visits,water_source:0
+msgid "General Water Source"
+msgstr "مصدر مياه عام"
+
+#. module: animal_production
+#: selection:visits,power_source:0
+msgid "Generator"
+msgstr "مولدات"
+
+#. module: animal_production
+#: selection:visits,build_state:0
+#: selection:visits,build_states:0
+#: selection:visits,building_State:0
+#: selection:visits,building_state:0
+#: selection:visits,inflection:0
+#: selection:visits,inner_Clearing:0
+#: selection:visits,mop_up_Dry_Offal:0
+#: selection:visits,mop_up_Used_Offal:0
+#: selection:visits,outer_Clearing:0
+#: selection:visits,sew_state:0
+#: selection:visits,sew_used_water:0
+#: selection:visits,shadow_Roof:0
+#: selection:visits,sufficient_Colling:0
+#: selection:visits,ventilation_state:0
+#: selection:visits,viscera_offal_room:0
+#: selection:visits,wall_grown:0
+msgid "Good"
+msgstr "جيدة"
+
+#. module: animal_production
+#: selection:lands,ownership_type:0
+msgid "Governmental"
+msgstr "حكومي"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__Floor
+#: model:ir.model.fields,field_description:animal_production.field_visits__grown
+msgid "Grown"
+msgstr "نمو"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__halls
+msgid "Halls"
+msgstr "صالات"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__halls_space
+msgid "Halls Space"
+msgstr "مساحة الصالات"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__hanger
+#: model:ir.model.fields,field_description:animal_production.field_visits__hanger_wait
+msgid "Hanger"
+msgstr "الحظائر"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__Hanger_Number
+msgid "Hanger Number"
+msgstr "عدد الحظائر"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__Hanger_Capacity
+#: model:ir.model.fields,field_description:animal_production.field_visits__Hanger_Space
+msgid "Hanger Space"
+msgstr "مساحة الحظائر"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__hanger_waiting_Space
+#: model:ir.model.fields,field_description:animal_production.field_visits__inflection
+msgid "Hanger Waiting Space"
+msgstr "مساحة حظائر الإنتظار"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Visits_form_view
+msgid "Hanger in Farms"
+msgstr "الحظائر في المزارع"
+
+#. module: animal_production
+#: selection:visits,temp_degree:0
+msgid "High"
+msgstr "مرتفع"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_employees___hire_date
+msgid "Hire date"
+msgstr "تاريخ التعين"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__holocaust
+#: model:ir.model.fields,field_description:animal_production.field_visits__water_Circulation
+msgid "Holocaust"
+msgstr "المحرقة"
+
+#. module: animal_production
+#: selection:project_type,project_type:0
+msgid "Hydromagnetic Center"
+msgstr "مراكز التلقيح"
+
+#. module: animal_production
+#: selection:departments,type:0
+msgid "Hydromagnetic_Center"
+msgstr "مراكز التلقيح"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_applicant__id
+#: model:ir.model.fields,field_description:animal_production.field_areas__id
+#: model:ir.model.fields,field_description:animal_production.field_career__id
+#: model:ir.model.fields,field_description:animal_production.field_condition_report_wizard__id
+#: model:ir.model.fields,field_description:animal_production.field_conditions__id
+#: model:ir.model.fields,field_description:animal_production.field_confirm_report_wizard__id
+#: model:ir.model.fields,field_description:animal_production.field_departments__id
+#: model:ir.model.fields,field_description:animal_production.field_employees__id
+#: model:ir.model.fields,field_description:animal_production.field_lands__id
+#: model:ir.model.fields,field_description:animal_production.field_localities__id
+#: model:ir.model.fields,field_description:animal_production.field_order_report_wizard__id
+#: model:ir.model.fields,field_description:animal_production.field_orders__id
+#: model:ir.model.fields,field_description:animal_production.field_permission__id
+#: model:ir.model.fields,field_description:animal_production.field_policies__id
+#: model:ir.model.fields,field_description:animal_production.field_policy_report_wizard__id
+#: model:ir.model.fields,field_description:animal_production.field_project_report_wizard__id
+#: model:ir.model.fields,field_description:animal_production.field_project_type__id
+#: model:ir.model.fields,field_description:animal_production.field_projects__id
+#: model:ir.model.fields,field_description:animal_production.field_recommendation__id
+#: model:ir.model.fields,field_description:animal_production.field_reject_report_wizard__id
+#: model:ir.model.fields,field_description:animal_production.field_report_animal_production_condition_template__id
+#: model:ir.model.fields,field_description:animal_production.field_report_animal_production_confirm_template__id
+#: model:ir.model.fields,field_description:animal_production.field_report_animal_production_orders_template__id
+#: model:ir.model.fields,field_description:animal_production.field_report_animal_production_policies_template__id
+#: model:ir.model.fields,field_description:animal_production.field_report_animal_production_project_template__id
+#: model:ir.model.fields,field_description:animal_production.field_report_animal_production_reject_template__id
+#: model:ir.model.fields,field_description:animal_production.field_report_animal_production_visit_template__id
+#: model:ir.model.fields,field_description:animal_production.field_states__id
+#: model:ir.model.fields,field_description:animal_production.field_visit_report_wizard__id
+#: model:ir.model.fields,field_description:animal_production.field_visits__id
+#: model:ir.model.fields,field_description:animal_production.field_window__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_applicant__image
+#: model:ir.model.fields,field_description:animal_production.field_employees__image
+msgid "Image"
+msgstr "الصورة"
+
+#. module: animal_production
+#: selection:order.report.wizard,order_type:0
+#: selection:orders,order_type:0
+msgid "Initial Order Visit"
+msgstr "طلب زيارة مبدئية"
+
+#. module: animal_production
+#: selection:recommendation,recommend_type:0
+msgid "Initial Recommendation"
+msgstr "توصية مبدئية"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.view_recommendations_search
+msgid "Initial Recommendations"
+msgstr "التوصيات المبدئية"
+
+#. module: animal_production
+#: selection:visit.report.wizard,visit_type:0
+msgid "Initial Visit"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.view_order_search
+msgid "Initial order"
+msgstr "طلب مبدئي"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.view_visit_search
+msgid "Initial visit"
+msgstr "زيارة مبدئية"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__offal_cleaning
+msgid "Innards Cleaning"
+msgstr "النظافة الداخلية"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__inner_Clearing
+msgid "Inner Clearing"
+msgstr "النظافة الداخلية"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__inner_distribution_of_light
+msgid "Inner Lighting"
+msgstr "الإضاءة الداخلية"
+
+#. module: animal_production
+#: selection:visits,feed_source:0
+msgid "Internal"
+msgstr "خارجي"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Employees_form_view
+msgid "Jop Information"
+msgstr "معلومات الوظيفة"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__Special_knife
+msgid "Knife"
+msgstr "السكين"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_lands__land_type
+msgid "Land Type"
+msgstr "نوع الأرضية"
+
+#. module: animal_production
+#: model:ir.actions.act_window,name:animal_production.Lands_action
+#: model:ir.ui.menu,name:animal_production.Animal_production_menu_Lands
+#: model_terms:ir.ui.view,arch_db:animal_production.lands_form_view
+msgid "Lands"
+msgstr "الأراضي"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.lands_form_view
+msgid "Lands Information"
+msgstr "معلومات الأرض"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__lap
+msgid "Lap"
+msgstr "المعمل"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_applicant____last_update
+#: model:ir.model.fields,field_description:animal_production.field_areas____last_update
+#: model:ir.model.fields,field_description:animal_production.field_career____last_update
+#: model:ir.model.fields,field_description:animal_production.field_condition_report_wizard____last_update
+#: model:ir.model.fields,field_description:animal_production.field_conditions____last_update
+#: model:ir.model.fields,field_description:animal_production.field_confirm_report_wizard____last_update
+#: model:ir.model.fields,field_description:animal_production.field_departments____last_update
+#: model:ir.model.fields,field_description:animal_production.field_employees____last_update
+#: model:ir.model.fields,field_description:animal_production.field_lands____last_update
+#: model:ir.model.fields,field_description:animal_production.field_localities____last_update
+#: model:ir.model.fields,field_description:animal_production.field_order_report_wizard____last_update
+#: model:ir.model.fields,field_description:animal_production.field_orders____last_update
+#: model:ir.model.fields,field_description:animal_production.field_permission____last_update
+#: model:ir.model.fields,field_description:animal_production.field_policies____last_update
+#: model:ir.model.fields,field_description:animal_production.field_policy_report_wizard____last_update
+#: model:ir.model.fields,field_description:animal_production.field_project_report_wizard____last_update
+#: model:ir.model.fields,field_description:animal_production.field_project_type____last_update
+#: model:ir.model.fields,field_description:animal_production.field_projects____last_update
+#: model:ir.model.fields,field_description:animal_production.field_recommendation____last_update
+#: model:ir.model.fields,field_description:animal_production.field_reject_report_wizard____last_update
+#: model:ir.model.fields,field_description:animal_production.field_report_animal_production_condition_template____last_update
+#: model:ir.model.fields,field_description:animal_production.field_report_animal_production_confirm_template____last_update
+#: model:ir.model.fields,field_description:animal_production.field_report_animal_production_orders_template____last_update
+#: model:ir.model.fields,field_description:animal_production.field_report_animal_production_policies_template____last_update
+#: model:ir.model.fields,field_description:animal_production.field_report_animal_production_project_template____last_update
+#: model:ir.model.fields,field_description:animal_production.field_report_animal_production_reject_template____last_update
+#: model:ir.model.fields,field_description:animal_production.field_report_animal_production_visit_template____last_update
+#: model:ir.model.fields,field_description:animal_production.field_states____last_update
+#: model:ir.model.fields,field_description:animal_production.field_visit_report_wizard____last_update
+#: model:ir.model.fields,field_description:animal_production.field_visits____last_update
+#: model:ir.model.fields,field_description:animal_production.field_window____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_applicant__write_uid
+#: model:ir.model.fields,field_description:animal_production.field_areas__write_uid
+#: model:ir.model.fields,field_description:animal_production.field_career__write_uid
+#: model:ir.model.fields,field_description:animal_production.field_condition_report_wizard__write_uid
+#: model:ir.model.fields,field_description:animal_production.field_conditions__write_uid
+#: model:ir.model.fields,field_description:animal_production.field_confirm_report_wizard__write_uid
+#: model:ir.model.fields,field_description:animal_production.field_departments__write_uid
+#: model:ir.model.fields,field_description:animal_production.field_employees__write_uid
+#: model:ir.model.fields,field_description:animal_production.field_lands__write_uid
+#: model:ir.model.fields,field_description:animal_production.field_localities__write_uid
+#: model:ir.model.fields,field_description:animal_production.field_order_report_wizard__write_uid
+#: model:ir.model.fields,field_description:animal_production.field_orders__write_uid
+#: model:ir.model.fields,field_description:animal_production.field_permission__write_uid
+#: model:ir.model.fields,field_description:animal_production.field_policies__write_uid
+#: model:ir.model.fields,field_description:animal_production.field_policy_report_wizard__write_uid
+#: model:ir.model.fields,field_description:animal_production.field_project_report_wizard__write_uid
+#: model:ir.model.fields,field_description:animal_production.field_project_type__write_uid
+#: model:ir.model.fields,field_description:animal_production.field_projects__write_uid
+#: model:ir.model.fields,field_description:animal_production.field_recommendation__write_uid
+#: model:ir.model.fields,field_description:animal_production.field_reject_report_wizard__write_uid
+#: model:ir.model.fields,field_description:animal_production.field_states__write_uid
+#: model:ir.model.fields,field_description:animal_production.field_visit_report_wizard__write_uid
+#: model:ir.model.fields,field_description:animal_production.field_visits__write_uid
+#: model:ir.model.fields,field_description:animal_production.field_window__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_applicant__write_date
+#: model:ir.model.fields,field_description:animal_production.field_areas__write_date
+#: model:ir.model.fields,field_description:animal_production.field_career__write_date
+#: model:ir.model.fields,field_description:animal_production.field_condition_report_wizard__write_date
+#: model:ir.model.fields,field_description:animal_production.field_conditions__write_date
+#: model:ir.model.fields,field_description:animal_production.field_confirm_report_wizard__write_date
+#: model:ir.model.fields,field_description:animal_production.field_departments__write_date
+#: model:ir.model.fields,field_description:animal_production.field_employees__write_date
+#: model:ir.model.fields,field_description:animal_production.field_lands__write_date
+#: model:ir.model.fields,field_description:animal_production.field_localities__write_date
+#: model:ir.model.fields,field_description:animal_production.field_order_report_wizard__write_date
+#: model:ir.model.fields,field_description:animal_production.field_orders__write_date
+#: model:ir.model.fields,field_description:animal_production.field_permission__write_date
+#: model:ir.model.fields,field_description:animal_production.field_policies__write_date
+#: model:ir.model.fields,field_description:animal_production.field_policy_report_wizard__write_date
+#: model:ir.model.fields,field_description:animal_production.field_project_report_wizard__write_date
+#: model:ir.model.fields,field_description:animal_production.field_project_type__write_date
+#: model:ir.model.fields,field_description:animal_production.field_projects__write_date
+#: model:ir.model.fields,field_description:animal_production.field_recommendation__write_date
+#: model:ir.model.fields,field_description:animal_production.field_reject_report_wizard__write_date
+#: model:ir.model.fields,field_description:animal_production.field_states__write_date
+#: model:ir.model.fields,field_description:animal_production.field_visit_report_wizard__write_date
+#: model:ir.model.fields,field_description:animal_production.field_visits__write_date
+#: model:ir.model.fields,field_description:animal_production.field_window__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: animal_production
+#: model:ir.actions.act_window,name:animal_production.get_localities_action
+#: model:ir.model.fields,field_description:animal_production.field_states__locality_count
+#: model:ir.model.fields,field_description:animal_production.field_states__locality_ids
+#: model_terms:ir.ui.view,arch_db:animal_production.view_Localities_search
+msgid "Localities"
+msgstr "المحليات"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_confirm_report_wizard__locality_id
+#: model:ir.model.fields,field_description:animal_production.field_order_report_wizard__locality_id
+#: model:ir.model.fields,field_description:animal_production.field_orders__locality_id
+#: model:ir.model.fields,field_description:animal_production.field_permission__locality_id
+#: model:ir.model.fields,field_description:animal_production.field_project_report_wizard__locality_id
+#: model:ir.model.fields,field_description:animal_production.field_projects__locality_id
+#: model:ir.model.fields,field_description:animal_production.field_reject_report_wizard__locality_id
+#: model:ir.model.fields,field_description:animal_production.field_visit_report_wizard__locality_id
+#: model:ir.model.fields,field_description:animal_production.field_visits__locality_id
+msgid "Locality"
+msgstr "المحلية"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_areas__locality_id
+#: model:ir.model.fields,field_description:animal_production.field_departments__locality_id
+#: model:ir.model.fields,field_description:animal_production.field_localities__name
+#: model:ir.model.fields,field_description:animal_production.field_window__locality_id
+msgid "Locality Name"
+msgstr " المحلية"
+
+#. module: animal_production
+#: selection:visits,temp_degree:0
+msgid "Low"
+msgstr "منخفض"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Visits_form_view
+msgid "Machine Equipment"
+msgstr "الألات والمعدات"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Applicant_form_view
+msgid "Make Orders"
+msgstr "اضافه طلب"
+
+#. module: animal_production
+#: selection:applicant,_gender:0
+#: selection:employees,_gender:0
+#: model_terms:ir.ui.view,arch_db:animal_production.view_employees_search
+msgid "Male"
+msgstr "ذكر"
+
+#. module: animal_production
+#: model:res.groups,name:animal_production.animal_manager_access_group
+msgid "Manager"
+msgstr "المدير"
+
+#. module: animal_production
+#: selection:employees,_social_state:0
+msgid "Married"
+msgstr "متزوج"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__medical_Detect
+msgid "Medical Detection"
+msgstr "الفحص الطبي"
+
+#. module: animal_production
+#: selection:visits,temp_degree:0
+msgid "Medium"
+msgstr "وسط"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__mills
+msgid "Mills"
+msgstr "المطاحن"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__mixers
+msgid "Mixers"
+msgstr "الخلاطات"
+
+#. module: animal_production
+#: selection:visits,holocaust:0
+#: selection:visits,water_Circulation:0
+msgid "Modern"
+msgstr "حديث"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__mop_up_Offal
+msgid "Mop Up Offal"
+msgstr "التخلص من الفضلات"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__mop_up_Dry_Offal
+msgid "Mop up  Dry Offal"
+msgstr "التخلص من الفضلات الصلبة"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__mop_up_Used_Offal
+msgid "Mop up  used Offal"
+msgstr "التخلص من الفضلات المستعملة"
+
+#. module: animal_production
+#: selection:visits,holocaust:0
+msgid "Movable"
+msgstr "متحرك"
+
+#. module: animal_production
+#: selection:lands,land_type:0
+msgid "Muddy"
+msgstr "طينية"
+
+#. module: animal_production
+#: selection:applicant,_Personal_prove_type:0
+#: selection:employees,_Personal_prove_type:0
+msgid "National Card"
+msgstr "بطاقة قومية"
+
+#. module: animal_production
+#: selection:applicant,_Personal_prove_type:0
+#: selection:employees,_Personal_prove_type:0
+msgid "National Identification"
+msgstr "رقم وطني"
+
+#. module: animal_production
+#: selection:visits,general_Shape:0
+msgid "Need Improvement"
+msgstr "بحاجة للتحسين"
+
+#. module: animal_production
+#: code:addons/animal_production/models/models.py:14
+#: code:addons/animal_production/models/models.py:32
+#: code:addons/animal_production/models/models.py:35
+#: code:addons/animal_production/models/models.py:37
+#: code:addons/animal_production/models/models.py:49
+#: code:addons/animal_production/models/models.py:60
+#: code:addons/animal_production/models/models.py:63
+#: code:addons/animal_production/models/models.py:65
+#: code:addons/animal_production/models/models.py:77
+#: code:addons/animal_production/models/models.py:90
+#: code:addons/animal_production/models/models.py:93
+#: code:addons/animal_production/models/models.py:95
+#: code:addons/animal_production/models/models.py:106
+#: code:addons/animal_production/models/models.py:114
+#: code:addons/animal_production/models/models.py:117
+#: code:addons/animal_production/models/models.py:119
+#: code:addons/animal_production/models/models.py:140
+#: code:addons/animal_production/models/models.py:174
+#: code:addons/animal_production/models/models.py:177
+#: code:addons/animal_production/models/models.py:179
+#: code:addons/animal_production/models/models.py:189
+#: code:addons/animal_production/models/models.py:205
+#: code:addons/animal_production/models/models.py:208
+#: code:addons/animal_production/models/models.py:210
+#: code:addons/animal_production/models/models.py:220
+#: code:addons/animal_production/models/models.py:235
+#: code:addons/animal_production/models/models.py:238
+#: code:addons/animal_production/models/models.py:240
+#: code:addons/animal_production/models/models.py:251
+#: code:addons/animal_production/models/models.py:256
+#: code:addons/animal_production/models/models.py:259
+#: code:addons/animal_production/models/models.py:261
+#: code:addons/animal_production/models/models.py:273
+#: code:addons/animal_production/models/models.py:307
+#: code:addons/animal_production/models/models.py:310
+#: code:addons/animal_production/models/models.py:312
+#: code:addons/animal_production/models/models.py:324
+#: code:addons/animal_production/models/models.py:348
+#: code:addons/animal_production/models/models.py:351
+#: code:addons/animal_production/models/models.py:353
+#: code:addons/animal_production/models/models.py:378
+#: code:addons/animal_production/models/models.py:427
+#: code:addons/animal_production/models/models.py:430
+#: code:addons/animal_production/models/models.py:432
+#: code:addons/animal_production/models/models.py:459
+#: code:addons/animal_production/models/models.py:775
+#: code:addons/animal_production/models/models.py:778
+#: code:addons/animal_production/models/models.py:780
+#: code:addons/animal_production/models/models.py:824
+#: code:addons/animal_production/models/models.py:862
+#: code:addons/animal_production/models/models.py:865
+#: code:addons/animal_production/models/models.py:867
+#: code:addons/animal_production/models/models.py:879
+#: code:addons/animal_production/models/models.py:921
+#: code:addons/animal_production/models/models.py:924
+#: code:addons/animal_production/models/models.py:926
+#: code:addons/animal_production/models/models.py:981
+#: code:addons/animal_production/models/models.py:1031
+#: code:addons/animal_production/models/models.py:1034
+#: code:addons/animal_production/models/models.py:1036
+#: code:addons/animal_production/models/models.py:1074
+#: code:addons/animal_production/models/models.py:1087
+#: code:addons/animal_production/models/models.py:1090
+#: code:addons/animal_production/models/models.py:1092
+#: code:addons/animal_production/models/models.py:1116
+#: code:addons/animal_production/models/models.py:1148
+#: code:addons/animal_production/models/models.py:1151
+#: code:addons/animal_production/models/models.py:1153
+#, python-format
+msgid "New"
+msgstr "جديد"
+
+#. module: animal_production
+#: selection:permission,permission_Type:0
+msgid "New Permission"
+msgstr "تصديق جديد"
+
+#. module: animal_production
+#: selection:visits,water_source:0
+msgid "Non"
+msgstr "لا شي"
+
+#. module: animal_production
+#: selection:visits,big_barrels:0
+#: selection:visits,dryer_tables:0
+#: selection:visits,skin_weigher:0
+#: selection:visits,waiter_dashes:0
+msgid "Non Exist"
+msgstr "غير موجود"
+
+#. module: animal_production
+#: selection:visits,feed_presses:0
+#: selection:visits,feed_stock:0
+#: selection:visits,forage_analyzers:0
+#: selection:visits,lap:0
+#: selection:visits,mills:0
+#: selection:visits,mixers:0
+#: selection:visits,sanitation_building:0
+#: selection:visits,silos:0
+#: selection:visits,worker_residence:0
+msgid "Non Existed"
+msgstr "غير موجود"
+
+#. module: animal_production
+#: selection:visits,conditioners:0
+msgid "Non Existent"
+msgstr "غير موجود"
+
+#. module: animal_production
+#: selection:visits,inner_Clearing:0
+#: selection:visits,mop_up_Dry_Offal:0
+#: selection:visits,mop_up_Used_Offal:0
+#: selection:visits,outer_Clearing:0
+#: selection:visits,sufficient_Colling:0
+msgid "Non Good"
+msgstr "غير جيد"
+
+#. module: animal_production
+#: selection:visits,building_space:0
+msgid "Non Suitable"
+msgstr "غير مناسب"
+
+#. module: animal_production
+#: selection:visits,room_coll:0
+msgid "Non_Existent"
+msgstr "غير موجود"
+
+#. module: animal_production
+#: selection:visits,offal_cleaning:0
+#: selection:visits,offal_treatment:0
+#: selection:visits,skin_room:0
+msgid "Not Acceptable"
+msgstr "غير مقبول"
+
+#. module: animal_production
+#: selection:visits,general_State:0
+msgid "Not Clean"
+msgstr "غير نظيفة"
+
+#. module: animal_production
+#: selection:visits,Special_knife:0
+msgid "Not Conformable"
+msgstr "غير مطابق"
+
+#. module: animal_production
+#: selection:visits,area_space:0
+#: selection:visits,halls_space:0
+#: selection:visits,skins_keeping:0
+#: selection:visits,stock_Space:0
+#: selection:visits,stores_space:0
+msgid "Not Enough"
+msgstr "غير كافي"
+
+#. module: animal_production
+#: selection:visits,batch_machine:0
+#: selection:visits,halls:0
+#: selection:visits,stores:0
+#: selection:visits,wash_dash:0
+msgid "Not Exist"
+msgstr "غير موجود"
+
+#. module: animal_production
+#: selection:visits,basin_purge:0
+#: selection:visits,check_lap:0
+#: selection:visits,external_Fence:0
+#: selection:visits,external_fence:0
+#: selection:visits,hanger:0
+#: selection:visits,hanger_wait:0
+#: selection:visits,product_stock:0
+#: selection:visits,water_circulation:0
+#: selection:visits,worker_residences:0
+msgid "Not Existed"
+msgstr "غير موجود"
+
+#. module: animal_production
+#: selection:visits,feed_stocks:0
+#: selection:visits,record_stamp:0
+#: selection:visits,slaughter_house:0
+#: selection:visits,strip:0
+msgid "Not Existent"
+msgstr "غير موجود"
+
+#. module: animal_production
+#: selection:visits,build_state:0
+#: selection:visits,build_states:0
+#: selection:visits,building_State:0
+#: selection:visits,building_state:0
+#: selection:visits,inflection:0
+#: selection:visits,sew_state:0
+#: selection:visits,sew_used_water:0
+#: selection:visits,shadow_Roof:0
+#: selection:visits,viscera_offal_room:0
+#: selection:visits,wall_grown:0
+msgid "Not Good"
+msgstr "غير جيد"
+
+#. module: animal_production
+#: selection:visits,Hanger_Number:0
+msgid "Not Sufficient"
+msgstr "غير كافي"
+
+#. module: animal_production
+#: selection:visits,Floor:0
+#: selection:visits,Hanger_Space:0
+#: selection:visits,grown:0
+#: selection:visits,hanger_waiting_Space:0
+msgid "Not Suitable"
+msgstr "غير مناسب"
+
+#. module: animal_production
+#: selection:visits,strip_number:0
+msgid "Not Trainer"
+msgstr "غير مدرب"
+
+#. module: animal_production
+#: selection:visits,ventilation_state:0
+msgid "Not_Good"
+msgstr "غير جيد"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.condition_report_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:animal_production.confirm_report_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:animal_production.order_report_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:animal_production.policy_report_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:animal_production.project_report_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:animal_production.reject_report_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:animal_production.visit_report_wizard_view_form
+msgid "OR"
+msgstr "أو"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__offal_treatment
+msgid "Offal Treatment"
+msgstr "معاملة الفضلات"
+
+#. module: animal_production
+#: model:ir.ui.menu,name:animal_production.Animal_production_menu_sub
+msgid "Operations"
+msgstr "العمليات"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__Order_id
+#: model_terms:ir.ui.view,arch_db:animal_production.Orders_form_view
+msgid "Order"
+msgstr "الطلب"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_applicant__seq10
+#: model:ir.model.fields,field_description:animal_production.field_areas__seq3
+#: model:ir.model.fields,field_description:animal_production.field_career__seq8
+#: model:ir.model.fields,field_description:animal_production.field_conditions__seq7
+#: model:ir.model.fields,field_description:animal_production.field_departments__seq5
+#: model:ir.model.fields,field_description:animal_production.field_employees__seq9
+#: model:ir.model.fields,field_description:animal_production.field_lands__name
+#: model:ir.model.fields,field_description:animal_production.field_localities__seq2
+#: model:ir.model.fields,field_description:animal_production.field_orders__name
+#: model:ir.model.fields,field_description:animal_production.field_permission__seq13
+#: model:ir.model.fields,field_description:animal_production.field_policies__seq6
+#: model:ir.model.fields,field_description:animal_production.field_project_type__seq14
+#: model:ir.model.fields,field_description:animal_production.field_projects__seq15
+#: model:ir.model.fields,field_description:animal_production.field_recommendation__seq12
+#: model:ir.model.fields,field_description:animal_production.field_states__seq1
+#: model:ir.model.fields,field_description:animal_production.field_visits__seq11
+#: model:ir.model.fields,field_description:animal_production.field_window__seq4
+msgid "Order Reference"
+msgstr "رقم إشارة الأمر"
+
+#. module: animal_production
+#: model:ir.actions.act_window,name:animal_production.order_report_wizard_action
+#: model:ir.model,name:animal_production.model_order_report_wizard
+msgid "Order Report"
+msgstr "تقارير الطلبات"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_order_report_wizard__order_type
+#: model:ir.model.fields,field_description:animal_production.field_orders__order_type
+#: model:ir.model.fields,field_description:animal_production.field_permission__order_type
+#: model:ir.model.fields,field_description:animal_production.field_recommendation__order_type
+#: model:ir.model.fields,field_description:animal_production.field_visits__order_type
+msgid "Order Type"
+msgstr "نوع الطلب"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_orders__Order_date
+msgid "Order date"
+msgstr "تاريخ الطلب"
+
+#. module: animal_production
+#: model:ir.actions.report,name:animal_production.order_report
+msgid "Order details"
+msgstr "تفاصيل الطلب"
+
+#. module: animal_production
+#: model:ir.ui.menu,name:animal_production.Animal_order_report_menu
+#: model:ir.ui.menu,name:animal_production.Animal_production_menu_Orders
+#: model_terms:ir.ui.view,arch_db:animal_production.view_order_search
+msgid "Orders"
+msgstr "الطلبات"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Orders_form_view
+msgid "Orders Information"
+msgstr "معلومات الطلبات"
+
+#. module: animal_production
+#: selection:applicant,_Personal_prove_type:0
+#: selection:employees,_Personal_prove_type:0
+#: selection:employees,_social_state:0
+#: selection:visits,power_source:0
+msgid "Other"
+msgstr "أخرى"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Applicant_form_view
+msgid "Other Information"
+msgstr "معلومات أخرى"
+
+#. module: animal_production
+#: selection:lands,ownership_type:0
+msgid "Others"
+msgstr "أخرى"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__outer_Clearing
+msgid "Outer Clearing"
+msgstr "النظافة الخارجية"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_lands__ownership_type
+msgid "Ownership Type"
+msgstr "نوع الملكية"
+
+#. module: animal_production
+#: selection:applicant,_Personal_prove_type:0
+#: selection:employees,_Personal_prove_type:0
+msgid "Pass Port"
+msgstr "جواز سفر"
+
+#. module: animal_production
+#: selection:order.report.wizard,parameter_id:0
+#: selection:project.report.wizard,parameter_id:0
+msgid "Period & Applicant"
+msgstr "الفترة و مققدم الطلب"
+
+#. module: animal_production
+#: selection:confirm.report.wizard,parameter_id:0
+#: selection:order.report.wizard,parameter_id:0
+#: selection:project.report.wizard,parameter_id:0
+#: selection:reject.report.wizard,parameter_id:0
+#: selection:visit.report.wizard,parameter_id:0
+msgid "Period & Area"
+msgstr "الفترة والمنطقة"
+
+#. module: animal_production
+#: selection:condition.report.wizard,parameter_id:0
+#: selection:confirm.report.wizard,parameter_id:0
+#: selection:order.report.wizard,parameter_id:0
+#: selection:policy.report.wizard,parameter_id:0
+#: selection:project.report.wizard,parameter_id:0
+#: selection:reject.report.wizard,parameter_id:0
+#: selection:visit.report.wizard,parameter_id:0
+msgid "Period & Department"
+msgstr "الفترة والقسم"
+
+#. module: animal_production
+#: selection:confirm.report.wizard,parameter_id:0
+#: selection:order.report.wizard,parameter_id:0
+#: selection:project.report.wizard,parameter_id:0
+#: selection:reject.report.wizard,parameter_id:0
+#: selection:visit.report.wizard,parameter_id:0
+msgid "Period & Locality"
+msgstr "الفترة والمحلية"
+
+#. module: animal_production
+#: selection:order.report.wizard,parameter_id:0
+#: selection:visit.report.wizard,parameter_id:0
+msgid "Period & Order & Type"
+msgstr "نوع الطلب والفترة"
+
+#. module: animal_production
+#: selection:confirm.report.wizard,parameter_id:0
+#: selection:order.report.wizard,parameter_id:0
+#: selection:project.report.wizard,parameter_id:0
+#: selection:reject.report.wizard,parameter_id:0
+#: selection:visit.report.wizard,parameter_id:0
+msgid "Period & State"
+msgstr " ولايه وفترة  "
+
+#. module: animal_production
+#: selection:condition.report.wizard,parameter_id:0
+#: selection:confirm.report.wizard,parameter_id:0
+#: selection:order.report.wizard,parameter_id:0
+#: selection:policy.report.wizard,parameter_id:0
+#: selection:project.report.wizard,parameter_id:0
+#: selection:reject.report.wizard,parameter_id:0
+#: selection:visit.report.wizard,parameter_id:0
+msgid "Period Only"
+msgstr "فترة فقط"
+
+#. module: animal_production
+#: model:ir.actions.act_window,name:animal_production.Permission_action
+#: model:ir.model.fields,field_description:animal_production.field_projects__per_id
+#: model:ir.ui.menu,name:animal_production.Animal_production_menu_Permission
+#: model_terms:ir.ui.view,arch_db:animal_production.Permission_form_view
+#: model_terms:ir.ui.view,arch_db:animal_production.view_permission_search
+#: selection:order.report.wizard,order_type:0
+#: selection:orders,order_type:0
+#: selection:visit.report.wizard,visit_type:0
+msgid "Permission"
+msgstr "تصديق"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Permission_form_view
+msgid "Permission Information"
+msgstr "معلومات التصديق"
+
+#. module: animal_production
+#: selection:recommendation,recommend_type:0
+msgid "Permission Recommendation"
+msgstr "توصية تصديق"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_permission__permission_Type
+msgid "Permission Type"
+msgstr "نوع التصديق"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.view_order_search
+msgid "Permission order"
+msgstr "طلب تصديق"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.view_visit_search
+msgid "Permission visit"
+msgstr "زيارة تصديق"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Employees_form_view
+msgid "Personal Information"
+msgstr "المعلومات الشخصية"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_applicant___personal_prove_number
+#: model:ir.model.fields,field_description:animal_production.field_employees___personal_prove_number
+msgid "Personal Prove Number"
+msgstr "رقم أثبات الشخصية"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_applicant___Personal_prove_type
+#: model:ir.model.fields,field_description:animal_production.field_employees___Personal_prove_type
+msgid "Personal Prove Type"
+msgstr "نوع إثبات الشخصية"
+
+#. module: animal_production
+#: selection:lands,land_type:0
+msgid "Petrographic"
+msgstr "صخرية"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_applicant___Phone_number
+#: model:ir.model.fields,field_description:animal_production.field_employees___Phone_number
+msgid "Phone number"
+msgstr "رقم الهاتف"
+
+#. module: animal_production
+#: selection:visits,holocaust:0
+msgid "Pit"
+msgstr "حفرة"
+
+#. module: animal_production
+#: model:ir.ui.menu,name:animal_production.Animal_production_menu_policies
+#: model_terms:ir.ui.view,arch_db:animal_production.department_form_view
+#: model_terms:ir.ui.view,arch_db:animal_production.policies_form_view
+msgid "Policies"
+msgstr "السياسات"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.policies_form_view
+msgid "Policies Information"
+msgstr "معلومات السياسات"
+
+#. module: animal_production
+#: model:ir.actions.report,name:animal_production.policies_report
+msgid "Policies details"
+msgstr "تفاصيل السياسة"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_policies__Policy_Description
+msgid "Policy Description"
+msgstr "وصف السياسة"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_policies__policy_type
+msgid "Policy Type"
+msgstr "نوع السياسة"
+
+#. module: animal_production
+#: selection:project_type,project_type:0
+msgid "Poultry Farm"
+msgstr "مزرعة دواجن"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Visits_form_view
+msgid "Poultry Farms"
+msgstr "مزارع الدواجن"
+
+#. module: animal_production
+#: selection:departments,type:0
+msgid "Poultry_Farms"
+msgstr "مزارع الدواجن"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__power_source
+msgid "Power Source"
+msgstr "مصدر الطاقة"
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_project_report_wizard
+msgid "Priject Report"
+msgstr "تقارير المشروع"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.condition_report_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:animal_production.confirm_report_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:animal_production.order_report_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:animal_production.policy_report_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:animal_production.project_report_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:animal_production.reject_report_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:animal_production.visit_report_wizard_view_form
+msgid "Print"
+msgstr "طباعة"
+
+#. module: animal_production
+#: selection:lands,ownership_type:0
+#: selection:visits,sanitation:0
+msgid "Private"
+msgstr "خاص"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Employees_form_view
+msgid "Private Information"
+msgstr "معلومات خاصة"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__product_stock
+msgid "Products Stock"
+msgstr "مخزن المنتجات"
+
+#. module: animal_production
+#: model:ir.ui.menu,name:animal_production.Animal_project_report_menu
+msgid "Project"
+msgstr "المشروع"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.project_form_view_pivot
+msgid "Project Analysis"
+msgstr " تحليل احصائي للمشاريع"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_projects__project_name
+msgid "Project Name"
+msgstr "إسم المشروع"
+
+#. module: animal_production
+#: model:ir.actions.act_window,name:animal_production.project_report_wizard_action
+msgid "Project Report"
+msgstr "تقارير المشروعات"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_project_type__project_type
+#: model:ir.model.fields,field_description:animal_production.field_projects__project_type_id
+msgid "Project Type"
+msgstr "نوع المشروع"
+
+#. module: animal_production
+#: model:ir.actions.act_window,name:animal_production.Project_Type_action
+#: model_terms:ir.ui.view,arch_db:animal_production.Project_Type_form_view
+msgid "Project_Type"
+msgstr "نوع المشروع"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Project_Type_form_view
+msgid "Project_Type Information"
+msgstr "معلومات نوع المشروع"
+
+#. module: animal_production
+#: model:ir.actions.act_window,name:animal_production.Projects_action
+#: model:ir.ui.menu,name:animal_production.Animal_production_menu
+#: model:ir.ui.menu,name:animal_production.Animal_production_menu_Projects
+#: model_terms:ir.ui.view,arch_db:animal_production.Projects_form_view
+#: model_terms:ir.ui.view,arch_db:animal_production.view_projects_search
+msgid "Projects"
+msgstr "المشروعات"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Projects_form_view
+msgid "Projects Information"
+msgstr "معلومات المشروعات"
+
+#. module: animal_production
+#: model:ir.ui.menu,name:animal_production.Animal_production_menu_Projects_type
+msgid "Projects_Type"
+msgstr "انواع المشاريع"
+
+#. module: animal_production
+#: selection:order.report.wizard,order_type:0
+#: selection:orders,order_type:0
+#: selection:visit.report.wizard,visit_type:0
+msgid "Re Permission"
+msgstr "تجديد تصديق"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.view_visit_search
+msgid "Re Permission visit"
+msgstr "زيارة تجديد تصديق"
+
+#. module: animal_production
+#: selection:recommendation,recommend_type:0
+msgid "Re_Permission Recommendation"
+msgstr "توصية تجديد تصديق"
+
+#. module: animal_production
+#: model:ir.actions.act_window,name:animal_production.Recommendation_action
+#: model:ir.ui.menu,name:animal_production.Animal_production_menu_Recommendation
+#: model_terms:ir.ui.view,arch_db:animal_production.Recommendation_form_view
+msgid "Recommendation"
+msgstr "التوصيات"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_orders__recommend_date
+#: model:ir.model.fields,field_description:animal_production.field_recommendation__recommend_date
+msgid "Recommendation Date"
+msgstr "تاريخ التوصية"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Recommendation_form_view
+msgid "Recommendation Information"
+msgstr "معلومات التوصية"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_recommendation__recommendation_text
+msgid "Recommendation Text"
+msgstr "نص التوصية"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_recommendation__recommend_type
+msgid "Recommendation Type"
+msgstr "نوع التوصية"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_permission__recommend_id
+#: model:ir.model.fields,field_description:animal_production.field_visits__recommend_id
+#: model_terms:ir.ui.view,arch_db:animal_production.view_recommendations_search
+msgid "Recommendations"
+msgstr "التوصيات"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__record_stamp
+msgid "Records And Stamp"
+msgstr "السجلات والأختام"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.lands_form_view
+msgid "Register"
+msgstr "تسجيل"
+
+#. module: animal_production
+#: selection:lands,state:0
+msgid "Registered"
+msgstr "مسجلة"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Recommendation_form_view
+msgid "Reject"
+msgstr "رفض"
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_reject_report_wizard
+msgid "Reject order Report"
+msgstr "تقرير الطلبات المرفوضه"
+
+#. module: animal_production
+#: selection:orders,state:0
+#: selection:recommendation,state:0
+msgid "Rejected"
+msgstr "مرفوضة"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_employees__user_id
+msgid "Related User"
+msgstr "مستخدم ذو صلة"
+
+#. module: animal_production
+#: selection:permission,permission_Type:0
+msgid "Renew Permission"
+msgstr "تجديد تصديق"
+
+#. module: animal_production
+#: model:ir.ui.menu,name:animal_production.Animal_report_menu
+msgid "Reports"
+msgstr "التقارير"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Applicant_form_view
+msgid "Required Information"
+msgstr "معلومات مطلوبة"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.lands_form_view
+msgid "Reset To Draft"
+msgstr "تعين كمبدئي"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Applicant_form_view
+#: model_terms:ir.ui.view,arch_db:animal_production.Conditions_form_view
+#: model_terms:ir.ui.view,arch_db:animal_production.Employees_form_view
+#: model_terms:ir.ui.view,arch_db:animal_production.Permission_form_view
+#: model_terms:ir.ui.view,arch_db:animal_production.Project_Type_form_view
+#: model_terms:ir.ui.view,arch_db:animal_production.Projects_form_view
+#: model_terms:ir.ui.view,arch_db:animal_production.Recommendation_form_view
+#: model_terms:ir.ui.view,arch_db:animal_production.Visits_form_view
+#: model_terms:ir.ui.view,arch_db:animal_production.department_form_view
+#: model_terms:ir.ui.view,arch_db:animal_production.policies_form_view
+msgid "Rest To Draft"
+msgstr "تعين كمبدئي"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__room_coll
+msgid "Room Colling"
+msgstr "غرف التبريد"
+
+#. module: animal_production
+#: selection:lands,land_type:0
+msgid "Sand Bank"
+msgstr "رملية"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__sanitation
+msgid "Sanitation"
+msgstr "الصرف الصحي"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__sanitation_building
+msgid "Sanitation Building"
+msgstr "مباني الصرف الصحي"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_condition_report_wizard__parameter_id
+#: model:ir.model.fields,field_description:animal_production.field_confirm_report_wizard__parameter_id
+#: model:ir.model.fields,field_description:animal_production.field_order_report_wizard__parameter_id
+#: model:ir.model.fields,field_description:animal_production.field_policy_report_wizard__parameter_id
+#: model:ir.model.fields,field_description:animal_production.field_project_report_wizard__parameter_id
+#: model:ir.model.fields,field_description:animal_production.field_reject_report_wizard__parameter_id
+#: model:ir.model.fields,field_description:animal_production.field_visit_report_wizard__parameter_id
+msgid "Select Report Parameters"
+msgstr "إختيار متغيرات التقرير"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__sew_state
+msgid "Sewerage State"
+msgstr "حالة المجاري"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__shadow_Roof
+msgid "Shadow And Roof"
+msgstr "السقف والظل"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__silos
+msgid "Silos"
+msgstr "التربة"
+
+#. module: animal_production
+#: selection:employees,_social_state:0
+msgid "Single"
+msgstr "مفرد"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__skins_keeping
+msgid "Skin Keeping"
+msgstr "حفظ الجلود"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__skin_room
+msgid "Skin Rooms"
+msgstr "غرف الجلود"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__skin_weigher
+msgid "Skin Weigher"
+msgstr "ميزان الجلود"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Visits_form_view
+msgid "Slaughter House"
+msgstr "المسالخ"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Visits_form_view
+msgid "Slaughter House Technical Helper"
+msgstr "المعينات الفنية للمسلخ"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Visits_form_view
+msgid "Slaughter house EquipmentMachine"
+msgstr "الالات ومعدات المسلخ"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Visits_form_view
+msgid "SlaughterHouse Building"
+msgstr "مباني المسلخ"
+
+#. module: animal_production
+#: selection:departments,type:0
+#: selection:project_type,project_type:0
+msgid "Slaughterhouse"
+msgstr "المسالخ"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__slaughter_house
+msgid "Slaughtering House"
+msgstr "المسالخ"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_employees___social_state
+msgid "Social State"
+msgstr "الحالة الإجتماعية"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_lands__lands_space
+msgid "Space"
+msgstr "المساحة"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_permission__Start_date
+#: model:ir.model.fields,field_description:animal_production.field_policies__f_date
+msgid "Stare Date"
+msgstr "تاريخ البداية"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_projects__Start_date
+msgid "Start Date"
+msgstr "تاريخ البدء"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_applicant__state
+#: model:ir.model.fields,field_description:animal_production.field_conditions__state
+#: model:ir.model.fields,field_description:animal_production.field_confirm_report_wizard__state_id
+#: model:ir.model.fields,field_description:animal_production.field_departments__state
+#: model:ir.model.fields,field_description:animal_production.field_employees__state
+#: model:ir.model.fields,field_description:animal_production.field_lands__state
+#: model:ir.model.fields,field_description:animal_production.field_order_report_wizard__state_id
+#: model:ir.model.fields,field_description:animal_production.field_orders__state
+#: model:ir.model.fields,field_description:animal_production.field_orders__state_id
+#: model:ir.model.fields,field_description:animal_production.field_permission__state
+#: model:ir.model.fields,field_description:animal_production.field_permission__state_id
+#: model:ir.model.fields,field_description:animal_production.field_policies__state
+#: model:ir.model.fields,field_description:animal_production.field_project_report_wizard__state_id
+#: model:ir.model.fields,field_description:animal_production.field_project_type__state
+#: model:ir.model.fields,field_description:animal_production.field_projects__state
+#: model:ir.model.fields,field_description:animal_production.field_projects__state_id
+#: model:ir.model.fields,field_description:animal_production.field_recommendation__state
+#: model:ir.model.fields,field_description:animal_production.field_reject_report_wizard__state_id
+#: model:ir.model.fields,field_description:animal_production.field_visit_report_wizard__state_id
+#: model:ir.model.fields,field_description:animal_production.field_visits__state
+#: model:ir.model.fields,field_description:animal_production.field_visits__state_id
+#: model_terms:ir.ui.view,arch_db:animal_production.view_land_search
+#: model_terms:ir.ui.view,arch_db:animal_production.view_order_search
+#: model_terms:ir.ui.view,arch_db:animal_production.view_permission_search
+#: model_terms:ir.ui.view,arch_db:animal_production.view_projects_search
+#: model_terms:ir.ui.view,arch_db:animal_production.view_recommendations_search
+#: model_terms:ir.ui.view,arch_db:animal_production.view_visit_search
+msgid "State"
+msgstr "الحالة"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_areas__state_id
+#: model:ir.model.fields,field_description:animal_production.field_departments__state_id
+#: model:ir.model.fields,field_description:animal_production.field_localities__state_id
+#: model:ir.model.fields,field_description:animal_production.field_states__name
+#: model:ir.model.fields,field_description:animal_production.field_window__state_id
+msgid "State Name"
+msgstr "اسم الولاية"
+
+#. module: animal_production
+#: model:ir.ui.menu,name:animal_production.Animal_production_menu_states
+#: model_terms:ir.ui.view,arch_db:animal_production.states_form_view
+#: model_terms:ir.ui.view,arch_db:animal_production.view_states_search
+msgid "States"
+msgstr "الولايات"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__stock_Space
+msgid "Stocks Space"
+msgstr "مساحة المخازن"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__stores
+msgid "Stores"
+msgstr "التخزين"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__stores_space
+msgid "Stores Space"
+msgstr "مساحة المخازن"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__strip
+msgid "Strip"
+msgstr "السلاخين"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__strip_number
+msgid "Strip Number"
+msgstr "عدد السلاخين"
+
+#. module: animal_production
+#: selection:visits,Hanger_Number:0
+msgid "Sufficient"
+msgstr "كافئ"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__sufficient_Colling
+msgid "Sufficient Colling"
+msgstr "كفاءة التبريد"
+
+#. module: animal_production
+#: selection:visits,Floor:0
+#: selection:visits,Hanger_Space:0
+#: selection:visits,basin_dimension:0
+#: selection:visits,building_space:0
+#: selection:visits,grown:0
+#: selection:visits,hanger_waiting_Space:0
+msgid "Suitable"
+msgstr "مناسب"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__temp_degree
+msgid "Temperature"
+msgstr "دررجة الحرارة"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_condition_report_wizard__to_date
+#: model:ir.model.fields,field_description:animal_production.field_confirm_report_wizard__to_date
+#: model:ir.model.fields,field_description:animal_production.field_order_report_wizard__to_date
+#: model:ir.model.fields,field_description:animal_production.field_policy_report_wizard__to_date
+#: model:ir.model.fields,field_description:animal_production.field_project_report_wizard__to_date
+#: model:ir.model.fields,field_description:animal_production.field_reject_report_wizard__to_date
+#: model:ir.model.fields,field_description:animal_production.field_visit_report_wizard__to_date
+msgid "To"
+msgstr "إلى"
+
+#. module: animal_production
+#: selection:visits,holocaust:0
+#: selection:visits,water_Circulation:0
+msgid "Traditional"
+msgstr "تقليدي"
+
+#. module: animal_production
+#: selection:visits,strip_number:0
+msgid "Trainer"
+msgstr "مدرب"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_departments__type
+#: model:ir.model.fields,field_description:animal_production.field_visits__type
+msgid "Type"
+msgstr "النوع"
+
+#. module: animal_production
+#: selection:visits,mop_up_Offal:0
+#: selection:visits,mop_up_liquid_substances:0
+msgid "UnConformity"
+msgstr "غير مطابق"
+
+#. module: animal_production
+#: selection:visits,Hanger_Capacity:0
+#: selection:visits,basin_number:0
+#: selection:visits,inner_distribution_of_light:0
+#: selection:visits,water_amount:0
+msgid "UnSufficient"
+msgstr "غير كافي"
+
+#. module: animal_production
+#: selection:visits,basin_dimension:0
+msgid "UnSuitable"
+msgstr "غير مناسب"
+
+#. module: animal_production
+#: model:res.groups,name:animal_production.animal_user_access_group
+msgid "User"
+msgstr "مستخدم"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__viscera_offal_room
+msgid "Viscera Offal Room"
+msgstr "غرف التخلص من الفضلات"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_lands__visit_id
+msgid "Visit"
+msgstr "الزيارة"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Visits_form_view_pivot
+msgid "Visit Analysis"
+msgstr " تحليل احصائي للزيارات"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Recommendation_form_view
+msgid "Visit Information"
+msgstr "معلومات الزيارة"
+
+#. module: animal_production
+#: model:ir.actions.act_window,name:animal_production.visit_report_wizard_action
+msgid "Visit Report"
+msgstr "تقاير الزيارات"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visit_report_wizard__visit_type
+#: model:ir.model.fields,field_description:animal_production.field_visits__visit_type
+msgid "Visit Type"
+msgstr "نوع الزيارة"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__visit_date
+msgid "Visit date"
+msgstr "تاريخ الزيارة"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_orders__visit_id
+#: model:ir.ui.menu,name:animal_production.Animal_production_menu_Visits
+#: model:ir.ui.menu,name:animal_production.Animal_visit_report_menu
+#: model_terms:ir.ui.view,arch_db:animal_production.Visits_form_view
+#: model_terms:ir.ui.view,arch_db:animal_production.view_visit_search
+msgid "Visits"
+msgstr "الزيارات"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Visits_form_view
+msgid "Visits Information"
+msgstr "معلومات الزيارات"
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_visit_report_wizard
+msgid "Visits Report"
+msgstr "تقارير الزيارات"
+
+#. module: animal_production
+#: model:ir.actions.report,name:animal_production.visit_report
+msgid "Visits details"
+msgstr "تفاصيل الزيارات"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__waiter_dashes
+msgid "Waiter Dashes"
+msgstr "احواض البلل"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__wall_grown
+msgid "Walls And grown Sacrifice hull"
+msgstr "حواض وارضية صالة الذبيح"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__wash_dash
+msgid "Wash Dash"
+msgstr "احواض الغسيل"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__water_amount
+msgid "Water Amount"
+msgstr "كمية المياه"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__water_circulation
+msgid "Water Circulation"
+msgstr "دورة المياه"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_cvisits__sew_used_water
+msgid "Water Drainage used"
+msgstr "تجفيف المياه المستعملة"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Visits_form_view
+msgid "Water Power & Supplying"
+msgstr "إمدادات الطاقة والمياه"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Visits_form_view
+msgid "Water Power& Supplying"
+msgstr "إمدادات الطاقة والمياه"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__water_source
+msgid "Water Source"
+msgstr "مصدرالمياه"
+
+#. module: animal_production
+#: selection:visits,water_source:0
+msgid "Well"
+msgstr "الحوائط"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Visits_form_view
+msgid "Wind & Colling"
+msgstr "التهوية والتبريد"
+
+#. module: animal_production
+#: model:ir.ui.menu,name:animal_production.Animal_production_menu_window
+#: model_terms:ir.ui.view,arch_db:animal_production.view_window_search
+msgid "Window"
+msgstr "النوافذ"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_employees__window_id
+#: model:ir.model.fields,field_description:animal_production.field_orders__window_id
+#: model:ir.model.fields,field_description:animal_production.field_window__name
+msgid "Window Name"
+msgstr " النافذة"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.window_form_view
+msgid "Windows"
+msgstr "النوافذ"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__worker_residence
+#: model:ir.model.fields,field_description:animal_production.field_visits__worker_residences
+msgid "Worker Residence"
+msgstr "سكن العمال"
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_agency_building
+msgid "agency_building"
+msgstr "مباني الوكالة"
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_agency_equipments
+msgid "agency_equipments"
+msgstr "الالات الوكالة"
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_applicant
+msgid "applicant"
+msgstr "مقدم الطلب"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.view_order_search
+msgid "applicant name"
+msgstr "إسم مقدم الطلب"
+
+#. module: animal_production
+#: model:ir.actions.act_window,name:animal_production.areas_action
+#: model:ir.model,name:animal_production.model_areas
+#: model:ir.ui.menu,name:animal_production.Animal_production_menu_areas
+msgid "areas"
+msgstr "المناطق"
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_building_farms
+msgid "building_farms"
+msgstr "مباني المزارع"
+
+#. module: animal_production
+#: model:ir.actions.act_window,name:animal_production.career_action
+#: model:ir.model,name:animal_production.model_career
+msgid "career"
+msgstr "الوظائف"
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_clearing_hanger
+msgid "clearing_hanger"
+msgstr "نظافة الحظائر"
+
+#. module: animal_production
+#: model:ir.actions.report,name:animal_production.condition_report
+msgid "condition details"
+msgstr "تفاصيل الشروط"
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_conditions
+#: model_terms:ir.ui.view,arch_db:animal_production.Conditions_form_view
+msgid "conditions"
+msgstr "الشروط"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Conditions_form_view
+msgid "conditions Information"
+msgstr "معلومات الشروط"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.Applicant_form_view
+#: model_terms:ir.ui.view,arch_db:animal_production.Conditions_form_view
+#: model_terms:ir.ui.view,arch_db:animal_production.Employees_form_view
+#: model_terms:ir.ui.view,arch_db:animal_production.Permission_form_view
+#: model_terms:ir.ui.view,arch_db:animal_production.Project_Type_form_view
+#: model_terms:ir.ui.view,arch_db:animal_production.Projects_form_view
+#: model_terms:ir.ui.view,arch_db:animal_production.Visits_form_view
+#: model_terms:ir.ui.view,arch_db:animal_production.department_form_view
+#: model_terms:ir.ui.view,arch_db:animal_production.policies_form_view
+msgid "confirm"
+msgstr "تأكيد"
+
+#. module: animal_production
+#: model:ir.actions.report,name:animal_production.confirm_report
+msgid "confirm details"
+msgstr "تفاصيل التصديق"
+
+#. module: animal_production
+#: model:ir.actions.act_window,name:animal_production.departments_action
+msgid "department"
+msgstr "القسم"
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_departments
+msgid "departments"
+msgstr "الأقسام"
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_employees
+#: model:ir.model.fields,field_description:animal_production.field_career__employee_ids
+#: model:ir.model.fields,field_description:animal_production.field_departments__employee_ids
+#: model:ir.model.fields,field_description:animal_production.field_window__employee_ids
+msgid "employees"
+msgstr "الموظفين"
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_environment
+msgid "environment"
+msgstr "البيئة"
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_environment_general_gleaning
+msgid "environment_general_gleaning"
+msgstr "البيئة والنظافة العامة"
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_factory
+msgid "factory"
+msgstr "المصنع"
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_lands
+#: model_terms:ir.ui.view,arch_db:animal_production.view_land_search
+msgid "lands"
+msgstr "الأراضي"
+
+#. module: animal_production
+#: model:ir.actions.act_window,name:animal_production.Localities_action
+#: model:ir.model,name:animal_production.model_localities
+#: model:ir.ui.menu,name:animal_production.Animal_production_menu_localities
+#: model_terms:ir.ui.view,arch_db:animal_production.Localities_form_view
+msgid "localities"
+msgstr "المحليات"
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_machine
+msgid "machine"
+msgstr "الألات"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__mop_up_liquid_substances
+msgid "mop up Liquid Substances"
+msgstr "التخلص من المواد السائلة"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.view_order_graph
+msgid "order"
+msgstr "الطلبات"
+
+#. module: animal_production
+#: model:ir.actions.act_window,name:animal_production.Orders_action
+#: model:ir.model,name:animal_production.model_orders
+msgid "orders"
+msgstr "الطلبات"
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_permission
+#: model:ir.model.fields,field_description:animal_production.field_recommendation__per_id
+#: model_terms:ir.ui.view,arch_db:animal_production.view_permission_graph
+msgid "permission"
+msgstr "التصديق"
+
+#. module: animal_production
+#: model:ir.actions.act_window,name:animal_production.policies_action
+#: model:ir.model,name:animal_production.model_policies
+#: model:ir.model.fields,field_description:animal_production.field_departments__policy_ids
+#: model:ir.ui.menu,name:animal_production.Animal_policy_report_menu
+msgid "policies"
+msgstr "السياسات"
+
+#. module: animal_production
+#: model:ir.actions.act_window,name:animal_production.policy_report_wizard_action
+#: model:ir.model,name:animal_production.model_policy_report_wizard
+msgid "policies Report"
+msgstr "تقرير السياسات"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_permission__pro_id
+msgid "project"
+msgstr "المشروع"
+
+#. module: animal_production
+#: model:ir.actions.report,name:animal_production.project_report
+msgid "project details"
+msgstr "تفاصيل المشروع"
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_project_type
+msgid "project_type"
+msgstr "نوع المشروع"
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_projects
+#: model:ir.model.fields,field_description:animal_production.field_project_type__project_ids
+#: model_terms:ir.ui.view,arch_db:animal_production.view_project_graph
+msgid "projects"
+msgstr "المشروعات"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.view_order_search
+msgid "re Permission order"
+msgstr "طلب تجديد تصديق"
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_recommendation
+msgid "recommendation"
+msgstr "التوصية"
+
+#. module: animal_production
+#: model:ir.ui.menu,name:animal_production.Animal_reject_order_report_menu
+msgid "reject Orders"
+msgstr "الطلبات المرفوضة"
+
+#. module: animal_production
+#: model:ir.actions.act_window,name:animal_production.reject_report_wizard_action
+msgid "reject order Report"
+msgstr "تقرير عن الطلبات المرفوضة"
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_rejected
+msgid "rejected"
+msgstr "مرفوض"
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_report_animal_production_condition_template
+msgid "report.animal_production.condition_template"
+msgstr ""
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_report_animal_production_confirm_template
+msgid "report.animal_production.confirm_template"
+msgstr ""
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_report_animal_production_orders_template
+msgid "report.animal_production.orders_template"
+msgstr ""
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_report_animal_production_policies_template
+msgid "report.animal_production.policies_template"
+msgstr ""
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_report_animal_production_project_template
+msgid "report.animal_production.project_template"
+msgstr ""
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_report_animal_production_reject_template
+msgid "report.animal_production.reject_template"
+msgstr ""
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_report_animal_production_visit_template
+msgid "report.animal_production.visit_template"
+msgstr ""
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_slaughter_house
+msgid "slaughter_house"
+msgstr "المسالخ"
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_slaughter_house_equipment_machine
+msgid "slaughter_house_equipment_machine"
+msgstr "الالات ومعدات المسلخ"
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_slaughter_house_technical_helper
+msgid "slaughter_house_technical_helper"
+msgstr "المعينات الفنية للمسلخ"
+
+#. module: animal_production
+#: model:ir.actions.act_window,name:animal_production.states_action
+#: model:ir.model,name:animal_production.model_states
+msgid "states"
+msgstr "الولايات"
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_type
+msgid "type"
+msgstr "النوع"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_visits__ventilation_state
+msgid "ventilation State"
+msgstr "حالة التهوية"
+
+#. module: animal_production
+#: model:ir.model.fields,field_description:animal_production.field_recommendation__visit_id
+#: model_terms:ir.ui.view,arch_db:animal_production.view_visit_graph
+msgid "visit"
+msgstr "الزيارة"
+
+#. module: animal_production
+#: code:addons/animal_production/models/models.py:771
+#, python-format
+msgid "visit date must be grater than or equal to order date."
+msgstr "تاريخ الزيارة يجب أن يكون اكبر من او مساويا لتاريخ الطلب"
+
+#. module: animal_production
+#: model:ir.actions.act_window,name:animal_production.visits_action
+#: model:ir.model,name:animal_production.model_visits
+msgid "visits"
+msgstr "الزيارات"
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_waters
+msgid "waters"
+msgstr "المياه"
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_wind
+msgid "wind"
+msgstr "التهوية"
+
+#. module: animal_production
+#: model:ir.model,name:animal_production.model_wind_colling
+msgid "wind_colling"
+msgstr "التهوية والتبريد"
+
+#. module: animal_production
+#: model:ir.actions.act_window,name:animal_production.window_action
+#: model:ir.model,name:animal_production.model_window
+msgid "window"
+msgstr "النافذه"
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.condition_template
+#: model_terms:ir.ui.view,arch_db:animal_production.confirm_template
+#: model_terms:ir.ui.view,arch_db:animal_production.orders_template
+#: model_terms:ir.ui.view,arch_db:animal_production.policies_template
+#: model_terms:ir.ui.view,arch_db:animal_production.project_template
+#: model_terms:ir.ui.view,arch_db:animal_production.reject_template
+#: model_terms:ir.ui.view,arch_db:animal_production.visit_template
+msgid "إدارة اﻹنتاج الحيواني"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.condition_template
+#: model_terms:ir.ui.view,arch_db:animal_production.confirm_template
+#: model_terms:ir.ui.view,arch_db:animal_production.orders_template
+#: model_terms:ir.ui.view,arch_db:animal_production.policies_template
+#: model_terms:ir.ui.view,arch_db:animal_production.project_template
+#: model_terms:ir.ui.view,arch_db:animal_production.reject_template
+#: model_terms:ir.ui.view,arch_db:animal_production.visit_template
+msgid "بسم الله الرحمن الرحيم"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.condition_template
+#: model_terms:ir.ui.view,arch_db:animal_production.confirm_template
+#: model_terms:ir.ui.view,arch_db:animal_production.orders_template
+#: model_terms:ir.ui.view,arch_db:animal_production.policies_template
+#: model_terms:ir.ui.view,arch_db:animal_production.project_template
+#: model_terms:ir.ui.view,arch_db:animal_production.reject_template
+#: model_terms:ir.ui.view,arch_db:animal_production.visit_template
+msgid "جمهورية السودان"
+msgstr ""
+
+#. module: animal_production
+#: model_terms:ir.ui.view,arch_db:animal_production.condition_template
+#: model_terms:ir.ui.view,arch_db:animal_production.confirm_template
+#: model_terms:ir.ui.view,arch_db:animal_production.orders_template
+#: model_terms:ir.ui.view,arch_db:animal_production.policies_template
+#: model_terms:ir.ui.view,arch_db:animal_production.project_template
+#: model_terms:ir.ui.view,arch_db:animal_production.reject_template
+#: model_terms:ir.ui.view,arch_db:animal_production.visit_template
+msgid "وزارة الزراعة والثروة الحيوانية والري"
+msgstr ""
+

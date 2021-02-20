@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="visit_template">
+            <t t-call="web.html_container">
+                <div class="article">
+                    <link rel="stylesheet" href="/animal_production/static/src/css/rtl.css"/>
+                    <font style="font-family: 'Amiri', serif;">
+                        <div class="header">
+                            <div class="row"
+                                 style="font-family: 'Amiri', 'serif';width: 99%;height: 103px;margin-left: 5px;">
+                                <div style="width: 33%;">
+                                    <img class="pull-left" src="/animal_production/static/img/images.jpeg" width="100"
+                                         height="100"/>
+                                </div>
+
+                                <div class="text-center" style="width: 34%;">
+                                    <h4 align="center">بسم الله الرحمن الرحيم</h4>
+                                    <h4 align="center">جمهورية السودان</h4>
+                                    <h4 align="center">وزارة الزراعة والثروة الحيوانية والري</h4>
+                                    <h4 align="center">إدارة اﻹنتاج الحيواني</h4>
+                                </div>
+
+                                <div class="text-right" style="width: 33%;">
+                                    <img class="pull-right" src="/animal_production/static/img/khartoum.jpeg"
+                                         width="100" height="100"/>
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                        <br/>
+
+                        <t t-if="params == 'general'">
+                            <h4 class="text-center">
+                                <strong>تقرير عن الزيارات</strong>
+                            </h4>
+                        </t>
+                        <t t-if="params == 'period_only'">
+                            <h4 class="text-center" dir="rtl">
+                                <strong>تقرير عن الزيارات في الفترة من</strong>
+                                <t t-esc="from_date"/>
+                                <strong>إلى:</strong>
+                                <t t-esc="to_date"/>
+                            </h4>
+                        </t>
+                        <t t-if="params == 'period_state'">
+                            <h4 class="text-center" dir="rtl">
+                                <strong>تقرير عن الزيارات وفي ولاية:</strong>
+                                <t t-esc="state_name"/>
+                                <strong>في الفترة من:</strong>
+                                <t t-esc="from_date"/>
+                                <strong>إلى:</strong>
+                                <t t-esc="to_date"/>
+                            </h4>
+                        </t>
+                        <t t-if="params == 'period_locality'">
+                            <h4 class="text-center" dir="rtl">
+                                <strong>تقرير عن الطلبات في ولاية:</strong>
+                                <t t-esc="state"/>
+                                <strong>في محلية:</strong>
+                                <t t-esc="locality_name"/>
+                                <strong>في الفترة من:</strong>
+                                <t t-esc="from_date"/>
+                                <strong>إلى:</strong>
+                                <t t-esc="to_date"/>
+                            </h4>
+                        </t>
+                        <t t-if="params == 'period_area'">
+                            <h4 class="text-center" dir="rtl">
+                                <strong>تقرير عن الطلبات في ولاية:</strong>
+                                <t t-esc="state"/>
+                                <strong>في محلية:</strong>
+                                <t t-esc="locality"/>
+                                <strong>في منطقة:</strong>
+                                <t t-esc="area_name"/>
+                                <strong>في الفترة من:</strong>
+                                <t t-esc="from_date"/>
+                                <strong>إلى:</strong>
+                                <t t-esc="to_date"/>
+                            </h4>
+                        </t>
+                        <t t-if="params == 'period_department'">
+                            <h4 class="text-center" dir="rtl">
+                                <strong>تقرير عن الطلبات في ولاية:</strong>
+                                <t t-esc="state"/>
+                                <strong>في محلية:</strong>
+                                <t t-esc="locality"/>
+                                <strong>في منطقة:</strong>
+                                <t t-esc="area"/>
+                                <strong>في قسم:</strong>
+                                <t t-esc="department_name"/>
+                                <strong>في الفترة من:</strong>
+                                <t t-esc="from_date"/>
+                                <strong>إلى:</strong>
+                                <t t-esc="to_date"/>
+                            </h4>
+                        </t>
+                         <t t-if="params == 'period_visit_type'">
+                            <h4 class="text-center" dir="rtl">
+                                <strong>تقرير عن  الزيارات  :</strong>
+                                <t t-esc="visit"/>
+                                <strong>في الفترة من:</strong>
+                                <t t-esc="from_date"/>
+                                <strong>إلى:</strong>
+                                <t t-esc="to_date"/>
+                            </h4>
+                        </t>
+
+
+                        <br/>
+                        <table dir="rtl" class="table-bordered" style="border: 1px solid black; width: 100%">
+                            <thead style="background-color: #cfd3d3;">
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong>رقم الزياره</strong>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong>نوع الزياره</strong>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong>تاريخ الزياره</strong>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong>الارض</strong>
+                                </th>
+                                <t t-if="params != 'period_department'">
+                                    <th class="text-center" style="border: 1px solid black;">
+                                        <strong>القسم</strong>
+                                    </th>
+                                </t>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong>النافذه</strong>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong>نص التوصيه</strong>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong>تاريخ التوصيه</strong>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong>الموظف</strong>
+                                </th>
+                                <t t-if="(params == 'general' and params == 'period_only' and params == 'period_visit_type')">
+                                    <th class="text-center" style="border: 1px solid black;">
+                                        <strong>الولاية</strong>
+                                    </th>
+                                </t>
+
+
+                            </thead>
+                            <tbody>
+                                <t t-foreach="docs" t-as="o">
+                                    <tr>
+                                        <td class="text-center" style="border: 1px solid black;">
+                                            <span t-field="o.seq11"/>
+                                        </td>
+                                        <td class="text-center" style="border: 1px solid black;">
+                                            <span t-field="o.visit_type"/>
+                                        </td>
+                                        <td class="text-center" style="border: 1px solid black;">
+                                            <span t-field="o.visit_date"/>
+                                        </td>
+                                        <td class="text-center" style="border: 1px solid black;">
+                                            <span t-field="o.land_id"/>
+                                        </td>
+                                        <t t-if="params != 'period_department'">
+                                            <td class="text-center" style="border: 1px solid black;">
+                                                <span t-field="o.department_id.name"/>
+                                            </td>
+                                        </t>
+                                        <td class="text-center" style="border: 1px solid black;">
+                                            <span t-field="o.Order_id.window_id.name"/>
+                                        </td>
+                                        <td class="text-center" style="border: 1px solid black;">
+                                            <span t-field="o.recommend_id.recommendation_text"/>
+                                        </td>
+                                        <td class="text-center" style="border: 1px solid black;">
+                                            <span t-field="o.recommend_id.recommend_date"/>
+                                        </td>
+                                        <td class="text-center" style="border: 1px solid black;">
+                                            <span t-field="o.employee_id.name"/>
+                                        </td>
+                                        <t t-if="(params == 'general' and params == 'period_only' and params == 'period_visit_type')">
+                                            <td class="text-center" style="border: 1px solid black;">
+                                                <span t-field="o.Order_id.window_id.state_id.name"/>
+                                            </td>
+                                        </t>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                    </font>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>

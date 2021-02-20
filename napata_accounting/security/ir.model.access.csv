@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+accounting_user,accounting_user,model_napata_accounting,account_user_access_group,1,1,0,0
+accounting_manager,accounting_maneger,model_napata_accounting,account_manager_access_group,1,1,1,1
+
+
+
+

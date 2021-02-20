@@ -1,0 +1,465 @@
+<odoo>
+    <data>
+
+        <!--   Visits form view -->
+
+        <record id="Visits_form_view" model="ir.ui.view">
+            <field name="name">Visits.form.view</field>
+            <field name="model">visits</field>
+            <field name="arch" type="xml">
+                <form string="Visits">
+                    <header>
+                        <button name="action_confirm" type="object" class="oe_highlight" string="تأكيد"
+                                states="draft"/>
+                        <button name="action_draft" type="object" class="oe_highlight" string="النعين كميدئي"
+                                attrs="{'invisible': [('state', '=', 'draft')]}"/>
+                        <button name="action_recommend" type="object" class="oe_highlight" string="اضافة توصية"
+                                attrs="{'invisible': ['|', ('state', '=', 'draft'), ('recommend_id', '!=', False)]}"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,confirm"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="seq11" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group string="معلومات الزياره">
+                            <group>
+                                <field name="Order_id" required="True"/>
+                                <field name="recommend_id" invisible="1"/>
+                                <field name="order_type" readonly="1" invisible="1"/>
+                                <field name="Order_date" required="True"/>
+                                <field name="visit_type" required="True" invisible="1"/>
+                                <field name="visit_date" required="True"/>
+                            </group>
+                            <group>
+
+                                <field name="department_id" required="True"/>
+                                <field name="employee_id" required="True"/>
+                                <field name="land_id" required="True" options="{'no_open': True, 'no_create': True}"/>
+                                <field name="type" invisible="1"/>
+                            </group>
+                        </group>
+                        <notebook attrs="{'invisible': [('order_type', '=', 'I')]}">
+                            <page string="التحقق من شروط مصنع الاعلاف"
+                                  attrs="{'invisible': ['|', ('type', '!=', 'fodder_factory'), ('order_type', '=', 'I')]}">
+                                <group colspan="3">
+                                    <group string="امدادات المياه والطاقة">
+                                        <field name="water_source" required="True"/>
+                                        <field name="water_amount" required="True"/>
+                                        <field name="power_source" required="True"/>
+                                        <field name="inner_distribution_of_light" required="True"/>
+                                    </group>
+                                    <group string="التهوية والتبريد">
+                                        <field name="ventilation_state" required="True"/>
+                                        <field name="temp_degree" required="True"/>
+                                        <field name="room_coll" required="True"/>
+                                        <field name="conditioners" required="True"/>
+                                        <field name="sufficient_Colling" required="True"/>
+                                    </group>
+                                </group>
+                                <group string="البيئه والنظافة العامة">
+                                    <group colspan="3">
+                                        <group>
+                                            <field name="sew_state" required="True"/>
+                                            <field name="sew_used_water" required="True"/>
+                                            <field name="outer_Clearing" required="True"/>
+                                            <field name="inner_Clearing" required="True"/>
+                                        </group>
+                                        <group>
+                                            <field name="mop_up_Dry_Offal" required="True"/>
+                                            <field name="mop_up_Used_Offal" required="True"/>
+                                            <field name="medical_Detect" required="True"/>
+                                            <field name="general_Shape" required="True"/>
+                                        </group>
+                                    </group>
+                                </group>
+                                <group string="مباني المصنع">
+                                    <group colspan="3">
+                                        <group>
+                                            <field name="building_state" required="True"/>
+                                            <field name="building_space" required="True"/>
+                                            <field name="silos" required="True"/>
+                                            <field name="worker_residence" required="True"/>
+                                        </group>
+                                        <group>
+                                            <field name="feed_stock" required="True"/>
+                                            <field name="sanitation_building" required="True"/>
+                                            <field name="lap" required="True"/>
+                                        </group>
+                                    </group>
+                                </group>
+                                <group string="الالات والمعدات">
+                                    <group colspan="3">
+                                        <group>
+                                            <field name="mills" required="True"/>
+                                            <field name="mixers" required="True"/>
+                                        </group>
+                                        <group>
+                                            <field name="forage_analyzers" required="True"/>
+                                            <field name="feed_presses" required="True"/>
+                                        </group>
+                                    </group>
+                                </group>
+                            </page>
+                            <page string=" التحقق من شروط مزارع الدواجن"
+                                  attrs="{'invisible': ['|', ('type', '!=', 'poultry_farms'), ('order_type', '=', 'I')]}">
+                                 <group colspan="3">
+                                    <group string="امدادات المياه والطاقة">
+                                        <field name="water_source" required="True"/>
+                                        <field name="water_amount" required="True"/>
+                                        <field name="power_source" required="True"/>
+                                        <field name="inner_distribution_of_light" required="True"/>
+                                    </group>
+                                    <group string="التهوية والتبريد">
+                                        <field name="ventilation_state" required="True"/>
+                                        <field name="temp_degree" required="True"/>
+                                        <field name="room_coll" required="True"/>
+                                        <field name="conditioners" required="True"/>
+                                        <field name="sufficient_Colling" required="True"/>
+                                    </group>
+                                </group>
+                                <group string="البيئه والنظافة العامة">
+                                    <group colspan="3">
+                                        <group>
+                                            <field name="sew_state" required="True"/>
+                                            <field name="sew_used_water" required="True"/>
+                                            <field name="outer_Clearing" required="True"/>
+                                            <field name="inner_Clearing" required="True"/>
+                                        </group>
+                                        <group>
+                                            <field name="mop_up_Dry_Offal" required="True"/>
+                                            <field name="mop_up_Used_Offal" required="True"/>
+                                            <field name="medical_Detect" required="True"/>
+                                            <field name="general_Shape" required="True"/>
+                                        </group>
+                                    </group>
+                                </group>
+                                    <group string="مزارع الماشية">
+                                        <group colspan="3">
+                                            <group>
+                                                <field name="build_state" required="True"/>
+                                                <field name="external_fence" required="True"/>
+                                                <field name="hanger" required="True"/>
+                                            </group>
+                                            <group>
+                                                <field name="worker_residences" required="True"/>
+                                                <field name="feed_stocks" required="True"/>
+                                                <field name="sanitation_building" required="True"/>
+                                            </group>
+                                            <group>
+                                                <field name="product_stock" required="True"/>
+                                                <field name="feed_source" required="True"/>
+                                                <field name="stock_Space" required="True"/>
+                                            </group>
+                                        </group>
+                                    <group string="النظافه في الحظائر">
+                                        <group colspan="3">
+                                            <group>
+                                                <field name="sanitation" required="True"/>
+                                                <field name="mop_up_Offal" required="True"/>
+                                                <field name="basin_purge" required="True"/>
+                                            </group>
+                                            <group>
+                                                <field name="basin_number" required="True"/>
+                                                <field name="basin_dimension" required="True"/>
+                                                <field name="slaughter_house" required="True"/>
+                                            </group>
+                                            <group>
+                                                <field name="mop_up_liquid_substances" required="True"/>
+                                                <field name="holocaust" required="True"/>
+                                                <field name="water_Circulation" required="True"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group string="الحظائر في المزارع">
+                                        <field name="Hanger_Number" required="True"/>
+                                        <field name="Hanger_Space" required="True"/>
+                                        <field name="Floor" required="True"/>
+                                        <field name="Hanger_Capacity" required="True"/>
+                                        <field name="shadow_Roof" required="True"/>
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="التحقق من شروط مزارع الماشية"
+                                  attrs="{'invisible': ['|', ('type', '!=', 'cuttle_farms'), ('order_type', '=', 'I')]}">
+                                <group colspan="3">
+                                    <group string="امدادات المياه والطاقة">
+                                        <field name="water_source" required="True"/>
+                                        <field name="water_amount" required="True"/>
+                                        <field name="power_source" required="True"/>
+                                        <field name="inner_distribution_of_light" required="True"/>
+                                    </group>
+                                    <group string="التهوية والتبريد">
+                                        <field name="ventilation_state" required="True"/>
+                                        <field name="temp_degree" required="True"/>
+                                        <field name="room_coll" required="True"/>
+                                        <field name="conditioners" required="True"/>
+                                        <field name="sufficient_Colling" required="True"/>
+                                    </group>
+                                </group>
+                                <group colspan="3">
+                                    <group string="البيئه والنظافة العامة">
+                                        <group>
+                                            <field name="sew_state" required="True"/>
+                                            <field name="sew_used_water" required="True"/>
+                                            <field name="outer_Clearing" required="True"/>
+                                            <field name="inner_Clearing" required="True"/>
+                                        </group>
+                                        <group>
+                                            <field name="mop_up_Dry_Offal" required="True"/>
+                                            <field name="mop_up_Used_Offal" required="True"/>
+                                            <field name="medical_Detect" required="True"/>
+                                            <field name="general_Shape" required="True"/>
+                                        </group>
+                                    </group>
+                                </group>
+                                <group>
+                                    <group colspan="3">
+                                        <group string="مباني المزارع">
+                                            <group>
+                                                <field name="build_state" required="True"/>
+                                                <field name="external_fence" required="True"/>
+                                                <field name="hanger" required="True"/>
+                                            </group>
+                                            <group>
+                                                <field name="worker_residences" required="True"/>
+                                                <field name="feed_stocks" required="True"/>
+                                                <field name="sanitation_building" required="True"/>
+                                            </group>
+                                            <group>
+                                                <field name="product_stock" required="True"/>
+                                                <field name="feed_source" required="True"/>
+                                                <field name="stock_Space" required="True"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group colspan="3">
+                                        <group string="النظافة في الحظائر">
+                                            <group>
+                                                <field name="sanitation" required="True"/>
+                                                <field name="mop_up_Offal" required="True"/>
+                                                <field name="basin_purge" required="True"/>
+                                            </group>
+                                            <group>
+                                                <field name="basin_number" required="True"/>
+                                                <field name="basin_dimension" required="True"/>
+                                                <field name="slaughter_house" required="True"/>
+                                            </group>
+                                            <group>
+                                                <field name="mop_up_liquid_substances" required="True"/>
+                                                <field name="holocaust" required="True"/>
+                                                <field name="water_Circulation" required="True"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group string="الحظائر في المزارع">
+                                        <field name="Hanger_Number" required="True"/>
+                                        <field name="Hanger_Space" required="True"/>
+                                        <field name="Floor" required="True"/>
+                                        <field name="Hanger_Capacity" required="True"/>
+                                        <field name="shadow_Roof" required="True"/>
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="التحقق من شروط المسالخ"
+                                  attrs="{'invisible': ['|', ('type', '!=', 'slaughterhouse'), ('order_type', '=', 'I')]}">
+                               <group colspan="3">
+                                    <group string="امدادات المياه والطاقة">
+                                        <field name="water_source" required="True"/>
+                                        <field name="water_amount" required="True"/>
+                                        <field name="power_source" required="True"/>
+                                        <field name="inner_distribution_of_light" required="True"/>
+                                    </group>
+                                    <group string="التهوية والتبريد">
+                                        <field name="ventilation_state" required="True"/>
+                                        <field name="temp_degree" required="True"/>
+                                        <field name="room_coll" required="True"/>
+                                        <field name="conditioners" required="True"/>
+                                        <field name="sufficient_Colling" required="True"/>
+                                    </group>
+                                </group>
+                                <group string="البيئه والنظافة العامة">
+                                    <group colspan="3">
+                                        <group>
+                                            <field name="sew_state" required="True"/>
+                                            <field name="sew_used_water" required="True"/>
+                                            <field name="outer_Clearing" required="True"/>
+                                            <field name="inner_Clearing" required="True"/>
+                                        </group>
+                                        <group>
+                                            <field name="mop_up_Dry_Offal" required="True"/>
+                                            <field name="mop_up_Used_Offal" required="True"/>
+                                            <field name="medical_Detect" required="True"/>
+                                            <field name="general_Shape" required="True"/>
+                                        </group>
+                                    </group>
+                                </group>
+                                    <group string="مباني المسلخ">
+                                        <group colspan="3">
+
+                                        <group>
+                                            <field name="build_states" required="True"/>
+                                            <field name="external_Fence" required="True"/>
+                                            <field name="hanger_wait" required="True"/>
+                                        </group>
+                                        <group>
+                                            <field name="viscera_offal_room" required="True"/>
+                                            <field name="wall_grown" required="True"/>
+                                            <field name="check_lap" required="True"/>
+                                        </group>
+                                        <group>
+                                            <field name="water_circulation" required="True"/>
+                                            <field name="feed_source" required="True"/>
+                                            <field name="stock_Space" required="True"/>
+                                        </group>
+                                    </group>
+                                    </group>
+
+                                        <group string="الات و معدات المسلخ">
+                                            <group colspan="3">
+
+                                            <group>
+                                                <field name="general_State" required="True"/>
+                                                <field name="Special_knife" required="True"/>
+                                            </group>
+                                        </group>
+
+                                    </group>
+                                        <group string="المعينات الفنية للمسلخ">
+                                            <group colspan="3">
+                                            <group>
+                                                <field name="hanger_waiting_Space" required="True"/>
+                                                <field name="offal_cleaning" required="True"/>
+                                                <field name="offal_treatment" required="True"/>
+                                            </group>
+                                            <group>
+                                                <field name="dispose_death" required="True"/>
+                                                <field name="record_stamp" required="True"/>
+                                                <field name="skin_room" required="True"/>
+                                            </group>
+                                            <group>
+                                                <field name="strip" required="True"/>
+                                                <field name="strip_number" required="True"/>
+                                                <field name="skins_keeping" required="True"/>
+                                            </group>
+                                        </group>
+                                </group>
+                            </page>
+                            <page string="التحقق من شرط اوكالة"
+                                  attrs="{'invisible': ['|', ('type', '!=', 'agency'), ('order_type', '=', 'I')]}">
+                                <group colspan="3">
+                                    <group string="امدادات المياه والطاقة">
+                                        <field name="water_source" required="True"/>
+                                        <field name="water_amount" required="True"/>
+                                        <field name="power_source" required="True"/>
+                                        <field name="inner_distribution_of_light" required="True"/>
+                                    </group>
+                                    <group string="التهوية والتبريد">
+                                        <field name="ventilation_state" required="True"/>
+                                        <field name="temp_degree" required="True"/>
+                                        <field name="room_coll" required="True"/>
+                                        <field name="conditioners" required="True"/>
+                                        <field name="sufficient_Colling" required="True"/>
+                                    </group>
+                                </group>
+                                <group string="البيئه والنظافة العامة">
+                                    <group colspan="3">
+                                        <group>
+                                            <field name="sew_state" required="True"/>
+                                            <field name="sew_used_water" required="True"/>
+                                            <field name="outer_Clearing" required="True"/>
+                                            <field name="inner_Clearing" required="True"/>
+                                        </group>
+                                        <group>
+                                            <field name="mop_up_Dry_Offal" required="True"/>
+                                            <field name="mop_up_Used_Offal" required="True"/>
+                                            <field name="medical_Detect" required="True"/>
+                                            <field name="general_Shape" required="True"/>
+                                        </group>
+                                    </group>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Visits tree view -->
+        <record id="Visits_tree_view" model="ir.ui.view">
+            <field name="name">Visits.tree.view</field>
+            <field name="model">visits</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="visit_date" required="True"/>
+                    <field name="Order_id" required="True"/>
+                    <field name="Order_date" required="True"/>
+                    <field name="employee_id" required="True"/>
+                    <field name="state" required="True"/>
+
+
+                </tree>
+            </field>
+        </record>
+
+        <record id="Visits_form_view_pivot" model="ir.ui.view">
+            <field name="name">Visits.form.view</field>
+            <field name="model">visits</field>
+            <field name="arch" type="xml">
+                <pivot string="Visit Analysis">
+                    <field name="visit_date" type="row"/>
+                    <field name="visit_type" type="col"/>
+                    <field name="employee_id"/>
+                </pivot>
+            </field>
+        </record>
+        <!-- Search view of Visits -->
+        <record id="view_visit_search" model="ir.ui.view">
+            <field name="name">view.visit.search</field>
+            <field name="model">visits</field>
+            <field name="arch" type="xml">
+                <search string="Visits">
+                    <field name="seq11"/>
+                    <filter name='by_visit_type_i' string="Initial visit" domain="[('visit_type','=','I')]"/>
+                    <filter name='by_visit_type_p' string="Permission visit" domain="[('visit_type','=','p')]"/>
+                    <filter name='by_visit_type_o' string=" Re Permission visit" domain="[('visit_type','=','o')]"/>
+                    <filter name="by_state" string="State" domain="[]" context="{'group_by':'state'}"/>
+                    <filter name="by_department" string="Departments" domain="[]"
+                            context="{'group_by':'department_id'}"/>
+                </search>
+
+            </field>
+        </record>
+        <!-- Graph View of visits -->
+        <record id="view_visit_graph" model="ir.ui.view">
+            <field name="name">view.visit.graph</field>
+            <field name="model">visits</field>
+            <field name="arch" type="xml">
+                <graph string="visit" type="pie">
+                    <field name="visit_type" type="row"/>
+                    <field name="visit_date" type="column"/>
+                    <!--						<field name="visit_type" type="measure"/>-->
+                </graph>
+            </field>
+        </record>
+
+        <!-- visits Action -->
+
+        <record id="visits_action" model="ir.actions.act_window">
+            <field name="name">visits</field>
+            <field name="res_model">visits</field>
+            <field name="view_mode">tree,form,pivot,graph</field>
+
+        </record>
+
+
+        <menuitem
+                id="Animal_production_menu_Visits"
+                name="Visits"
+                parent="Animal_production_menu_sub"
+                action="visits_action"
+                sequence="4"
+        />
+    </data>
+</odoo>
